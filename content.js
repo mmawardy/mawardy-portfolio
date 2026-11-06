@@ -18,7 +18,7 @@ window.SITE = {
     { value: 2400, suffix: "+", label: { ar: "تقييم من المستخدمين", en: "user ratings" } },
     { value: 3, suffix: "", label: { ar: "تطبيقات وألعاب منشورة", en: "published apps and games" } },
     { value: 4, suffix: "", label: { ar: "مواقع منشورة", en: "published websites" } },
-    { value: 58, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
+    { value: 55, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
     { value: 8, suffix: "", label: { ar: "قطاعات من العقارات للطب", en: "industries, from real estate to healthcare" } },
   ],
 
@@ -120,7 +120,6 @@ window.SITE = {
         { title: { ar: "إعلان لعبة خمن اللاعب", en: "Guess The Player Game Ad" }, topic: "APP AD", video: "assets/video/v02.mp4", poster: "assets/posters/v02.jpg" },
         { title: { ar: "Vivo: لحظات يومية", en: "Vivo: Everyday Moments" }, topic: "PRODUCT", video: "assets/video/v13.mp4", poster: "assets/posters/v13.jpg" },
         { title: { ar: "Vivo: يوم عمل", en: "Vivo: On The Go" }, topic: "PRODUCT", video: "assets/video/v14.mp4", poster: "assets/posters/v14.jpg" },
-        { title: { ar: "شوريل التصميم الجرافيكي", en: "Graphic Design Showreel" }, topic: "SHOWREEL", video: "assets/video/v10.mp4", poster: "assets/posters/v10.jpg" },
         { title: { ar: "صيانة طنابير السيارات", en: "Car Brake Drums Explained" }, topic: "AUTOMOTIVE", video: "assets/video/v32.mp4", poster: "assets/posters/v32.jpg" },
       ],
     },
@@ -185,11 +184,9 @@ window.SITE = {
         { title: { ar: "فن التحدث أمام الجمهور", en: "Public Speaking Mastery" }, topic: "EDUCATION", video: "assets/video/v44.mp4", poster: "assets/posters/v44.jpg" },
         { title: { ar: "إعلانات السوشيال ميديا", en: "Social Media Advertising" }, topic: "MARKETING", video: "assets/video/v51.mp4", poster: "assets/posters/v51.jpg" },
         { title: { ar: "نصائح التسويق الرقمي", en: "Digital Marketing Tips" }, topic: "MARKETING", video: "assets/video/v35.mp4", poster: "assets/posters/v35.jpg" },
-        { title: { ar: "أساسيات الأمان الرقمي", en: "Online Security Essentials" }, topic: "TECH", video: "assets/video/v30.mp4", poster: "assets/posters/v30.jpg" },
         { title: { ar: "حكاية فنية", en: "An Arts & Culture Story" }, topic: "STORY", video: "assets/video/v47.mp4", poster: "assets/posters/v47.jpg" },
         { title: { ar: "حكاية من الثقافة الشعبية", en: "A Pop Culture Story" }, topic: "STORY", video: "assets/video/v46.mp4", poster: "assets/posters/v46.jpg" },
         { title: { ar: "حوار مع صانع محتوى", en: "Creator Talk" }, topic: "TALK", video: "assets/video/v38.mp4", poster: "assets/posters/v38.jpg" },
-        { title: { ar: "برومو متجر ديكور", en: "Home Decor Store Promo" }, topic: "PROMO", video: "assets/video/v49.mp4", poster: "assets/posters/v49.jpg" },
       ],
     },
     {
