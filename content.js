@@ -1,7 +1,7 @@
 // All editable site data lives here: contact details, photo, stats and projects.
 window.SITE = {
   // Portrait path, e.g. "assets/img/mohamed.png". Empty shows the logo mark.
-  photo: "assets/img/mohamed.webp",
+  photo: "assets/img/mohamed-portrait-2.webp",
 
   // International format without "+", e.g. "201000000000".
   whatsapp: "201065295984",
