@@ -297,7 +297,7 @@
   const renderHeroFacts = () => {
     $("#heroFacts").replaceChildren(...heroFactStats().map((stat) => {
       const row = el("li");
-      row.append(el("b", "", `${stat.value.toLocaleString("en-US")}${stat.suffix}`), el("span", "", stat.label[lang]));
+      row.append(el("b", "", `${stat.value.toLocaleString("en-US")}${stat.suffix}`), el("span", "", (stat.short ?? stat.label)[lang]));
       return row;
     }));
   };
@@ -641,11 +641,13 @@
       y: 24, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.12,
       scrollTrigger: { trigger: ".foot", start: "top 98%", once: true },
     });
-    const heroScrub = { trigger: ".hero", start: "top top", end: "bottom top", scrub: 0.6 };
-    gsap.to(".hero-stage", { yPercent: 16, ease: "none", scrollTrigger: heroScrub });
-    gsap.to(".hero-portrait", { scale: 0.88, transformOrigin: "50% 100%", ease: "none", scrollTrigger: heroScrub });
-    gsap.to(".hero-side", { autoAlpha: 0, ease: "none", scrollTrigger: { ...heroScrub, end: "60% top" } });
-    gsap.to(".hero-shade", { backgroundColor: "#3D0713", ease: "none", scrollTrigger: heroScrub });
+    // The hero fits one screen only on desktop; on phones its text must stay readable while scrolling.
+    if (matchMedia("(min-width: 901px)").matches) {
+      const heroScrub = { trigger: ".hero", start: "top top", end: "bottom top", scrub: 0.6 };
+      gsap.to(".hero-stage", { yPercent: 16, ease: "none", scrollTrigger: heroScrub });
+      gsap.to(".hero-portrait", { scale: 0.88, transformOrigin: "50% 100%", ease: "none", scrollTrigger: heroScrub });
+      gsap.to(".hero-side", { autoAlpha: 0, ease: "none", scrollTrigger: { ...heroScrub, end: "60% top" } });
+    }
   };
 
   // The timeline is built while the loader still covers the page, so every element starts hidden.

@@ -17,7 +17,7 @@ window.SITE = {
 
   // Download and rating numbers come from Google Play (checked Nov 2026).
   stats: [
-    { value: 100, suffix: "K+", label: { ar: "تنزيل للعبة واحدة على Google Play", en: "downloads for a single Google Play game" } },
+    { value: 100, suffix: "K+", label: { ar: "تنزيل للعبة واحدة على Google Play", en: "downloads for a single Google Play game" }, short: { ar: "تنزيل للعبة واحدة", en: "game downloads" } },
     { value: 2400, suffix: "+", label: { ar: "تقييم من المستخدمين", en: "user ratings" } },
     { value: 3, suffix: "", label: { ar: "تطبيقات وألعاب منشورة", en: "published apps and games" } },
     { value: 4, suffix: "", label: { ar: "مواقع منشورة", en: "published websites" } },
