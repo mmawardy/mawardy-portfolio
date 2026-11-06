@@ -7,59 +7,59 @@
 
   const STRINGS = {
     ar: {
-      topRole: "مونتاج · موشن · برمجة",
-      eyebrow: "مونتير · موشن ديزاينر · مبرمج",
+      topRole: "مونتاج · موشن جرافيك · تطوير رقمي",
+      eyebrow: "مونتير · مصمم موشن جرافيك · مطوّر برمجيات",
       title: "بورتفوليو",
-      hello: "أهلًا، أنا",
+      hello: "مرحبًا، أنا",
       name: "محمد المواردي",
-      bio: "مونتير ومصمم موشن ومبرمج في شخص واحد. لعبتي على Google Play تخطت 100 ألف تنزيل، ومواقعي شغالة أونلاين، وإعلاناتي اشتغلت لعقارات وأطباء ومطاعم وسفر.",
-      ctaWork: "شوف شغلي",
-      ctaContact: "تواصل معي",
-      portraitTag: "محمد المواردي · MAWARDY",
+      bio: "أصنع محتوى مرئيًا يُحدث أثرًا، وأطوّر مواقع وتطبيقات وألعابًا تصل إلى المستخدمين، من الحملات الإعلانية للعلامات التجارية إلى لعبة تجاوزت 100 ألف تنزيل على Google Play.",
+      ctaWork: "استعرض أعمالي",
+      ctaContact: "ابدأ مشروعك",
+      portraitTag: "محمد المواردي",
       aboutKicker: "عني",
       aboutTitle: "الخلفية والفلسفة",
-      about1: "أغلب المشاريع محتاجة مونتير ومصمم موشن ومبرمج. أنا التلاتة في شخص واحد.",
-      about2: "تحت اسم MAWARDY Studio نشرت ألعاب وتطبيقات على Google Play، منها لعبة تخطت 100 ألف تنزيل. برمجت مواقع لأطباء ومصممين، وعملت إعلانات وريلز للعقارات والطب والطعام والرياضة والسفر والتسويق. ولأني بعمل الإعلان والمنتج الاتنين، مشروعك بيخرج من مكان واحد.",
+      about1: "أجمع بين المونتاج والموشن جرافيك والبرمجة، لأقدّم المشروع كاملًا من الفكرة إلى النتيجة.",
+      about2: "أنشر الألعاب والتطبيقات عبر MAWARDY Studio على Google Play، ومنها لعبة تجاوزت 100 ألف تنزيل. طوّرت مواقع لأطباء ومصممين، وأنتجت إعلانات وريلز لقطاعات العقارات والصحة والأغذية والرياضة والسفر والتسويق، لتحصل على الإعلان والمنتج الرقمي من مصدر واحد.",
       videoKicker: "01 / القسم الأول", videoTitle: "مونتاج الفيديو",
-      videoSub: "58 فيديو في 11 قسم، من الإعلانات والحملات للريلز. افتح أي قسم وشوف الشغل.",
-      webKicker: "02 / القسم التاني", webTitle: "برمجة المواقع",
-      webSub: "مواقع حقيقية شغالة أونلاين دلوقتي، لأطباء ومصممين ومنصات. اضغط وادخل عليها.",
-      appsKicker: "03 / القسم التالت", appsTitle: "تطبيقات وألعاب",
-      appsSub: "تطبيقات وألعاب منشورة على Google Play باسم MAWARDY Studio.",
-      videosWord: "فيديو", visitPlay: "افتح على Google Play",
-      winsKicker: "النجاحات", winsTitle: "الأرقام بتتكلم",
+      videoSub: "58 فيديو في 11 مجموعة، تشمل الحملات والإعلانات والريلز. اختر مجموعة لمشاهدة الأعمال.",
+      webKicker: "02 / القسم الثاني", webTitle: "برمجة المواقع",
+      webSub: "مواقع منشورة لأطباء ومصممين ومنصات رقمية. اضغط على أي موقع لزيارته.",
+      appsKicker: "03 / القسم الثالث", appsTitle: "تطبيقات وألعاب",
+      appsSub: "تطبيقات وألعاب منشورة على Google Play عبر MAWARDY Studio.",
+      videosWord: "فيديو", visitPlay: "عرض على Google Play",
+      winsKicker: "الإنجازات", winsTitle: "إنجازات بالأرقام",
       contactKicker: "تواصل",
-      contactTitle: "يلا نعمل حاجة استثنائية.",
-      contactSub: "عندك فيديو أو موقع أو تطبيق في دماغك؟ ابعت لي على واتساب.",
-      whatsapp: "كلمني واتساب",
+      contactTitle: "لنصنع عملًا استثنائيًا.",
+      contactSub: "لديك فيديو أو موقع أو تطبيق؟ راسلني عبر واتساب لنبدأ.",
+      whatsapp: "راسلني عبر واتساب",
       navHome: "الرئيسية", navVideo: "فيديو", navWeb: "مواقع", navApps: "تطبيقات", navContact: "تواصل",
       lang: "EN",
     },
     en: {
-      topRole: "Editing · Motion · Code",
+      topRole: "Video · Motion · Development",
       eyebrow: "VIDEO EDITOR · MOTION DESIGNER · DEVELOPER",
       title: "Portfolio",
       hello: "Hello, I'm",
       name: "Mohamed Almawardy",
-      bio: "A video editor, motion designer and developer in one person. My Google Play game passed 100,000 downloads, my websites are live, and my ads have run for real estate, doctors, food and travel brands.",
+      bio: "I create video content that makes an impact and build websites, apps and games that reach real users, from brand campaigns to a Google Play game with more than 100,000 downloads.",
       ctaWork: "View my work",
-      ctaContact: "Get in touch",
-      portraitTag: "Mohamed Almawardy · مواردي",
+      ctaContact: "Start a project",
+      portraitTag: "Mohamed Almawardy",
       aboutKicker: "ABOUT",
       aboutTitle: "Background & Philosophy",
-      about1: "Most projects need an editor, a motion designer and a developer. I am all three.",
-      about2: "Under MAWARDY Studio I have published games and apps on Google Play, one of them past 100,000 downloads. I have built websites for doctors and designers, and made ads and reels for real estate, healthcare, food, sports, travel and marketing. Because I make both the ad and the product, your whole project comes from one place.",
+      about1: "I bring video editing, motion graphics and software development together to deliver complete projects, from concept to launch.",
+      about2: "Through MAWARDY Studio, I publish apps and games on Google Play, including a game with more than 100,000 downloads. I have built websites for doctors and designers, and produced ads and reels for real estate, healthcare, food, sports, travel and marketing, so you get the campaign and the digital product from one source.",
       videoKicker: "01 / FIRST SECTION", videoTitle: "Video Editing",
-      videoSub: "58 videos in 11 collections, from campaigns and ads to reels. Open any collection to watch.",
+      videoSub: "58 videos across 11 collections of campaigns, ads and reels. Choose a collection to watch.",
       webKicker: "02 / SECOND SECTION", webTitle: "Web Development",
-      webSub: "Real websites live online right now, for doctors, designers and platforms. Press to visit.",
+      webSub: "Published websites for doctors, designers and digital platforms. Select a site to visit.",
       appsKicker: "03 / THIRD SECTION", appsTitle: "Apps & Games",
       appsSub: "Apps and games published on Google Play as MAWARDY Studio.",
-      videosWord: "videos", visitPlay: "Open on Google Play",
-      winsKicker: "SUCCESS", winsTitle: "The Numbers Speak",
+      videosWord: "videos", visitPlay: "View on Google Play",
+      winsKicker: "RESULTS", winsTitle: "Results In Numbers",
       contactKicker: "CONTACT",
-      contactTitle: "Let's build something extraordinary.",
-      contactSub: "Got a video, website or app in mind? Message me on WhatsApp.",
+      contactTitle: "Let's create something exceptional.",
+      contactSub: "Have a video, website or app in mind? Message me on WhatsApp to get started.",
       whatsapp: "Message me on WhatsApp",
       navHome: "Home", navVideo: "Video", navWeb: "Web", navApps: "Apps", navContact: "Contact",
       lang: "عربي",
@@ -280,7 +280,7 @@
   };
 
   const buildStat = ({ value, suffix, label }) => {
-    const stat = el("div", "stat");
+    const stat = el("div", "stat reveal-card");
     const number = el("span", "stat-num", `${value.toLocaleString("en-US")}${suffix}`);
     number.dataset.value = value;
     number.dataset.suffix = suffix;
@@ -309,7 +309,7 @@
   const renderMatrix = () => {
     $("#matrix").replaceChildren(...MATRIX[lang].map(([title, entries], index) => {
       const item = document.createElement("article");
-      item.className = "matrix-item";
+      item.className = "matrix-item reveal-card";
       const num = document.createElement("span");
       num.className = "matrix-num";
       num.textContent = `0${index + 1}`;
@@ -329,7 +329,10 @@
   const renderStaticText = () => {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-    $$("[data-i18n]").forEach((node) => { node.textContent = t(node.dataset.i18n); });
+    $$("[data-i18n]").forEach((node) => {
+      node.textContent = t(node.dataset.i18n);
+      node.removeAttribute("aria-label");
+    });
     $("#langBtn").textContent = t("lang");
   };
 
@@ -398,6 +401,7 @@
   const openLightbox = (src) => {
     lightboxVideo.src = src;
     lightbox.showModal();
+    if (animate) gsap.from(lightboxVideo, { scale: 0.9, autoAlpha: 0, duration: 0.45, ease: "power3.out", clearProps: "all" });
     lightboxVideo.play().catch(() => {});
   };
   lightbox.addEventListener("close", () => {
@@ -477,14 +481,71 @@
   };
 
   /* Scroll and intro motion */
+  // Arabic letters stay joined because text is only split at spaces.
+  const splitWords = (node) => {
+    const text = node.textContent.trim();
+    node.setAttribute("aria-label", text);
+    node.replaceChildren();
+    // Consecutive Latin words stay in one unit so right-to-left text keeps their order.
+    const units = text.match(/[A-Za-z][^\s\u0600-\u06FF]*(?:\s+[A-Za-z][^\s\u0600-\u06FF]*)*|\S+/g);
+    return units.map((word, index) => {
+      if (index) node.append(" ");
+      const mask = el("span", "word");
+      mask.setAttribute("aria-hidden", "true");
+      const inner = el("span", "word-in", word);
+      mask.append(inner);
+      node.append(mask);
+      return inner;
+    });
+  };
+
+  const revealWords = (node, vars = {}) => {
+    const words = splitWords(node);
+    gsap.from(words, {
+      yPercent: 115, duration: 1, ease: "power4.out", stagger: 0.07,
+      scrollTrigger: { trigger: node, start: "top 90%", once: true },
+      ...vars,
+    });
+  };
+
   const revealCards = () => {
     if (!animate) return;
     cardTriggers.forEach((trigger) => trigger.kill());
-    gsap.set(".reveal-card", { y: 50, autoAlpha: 0 });
+    gsap.set(".reveal-card", { y: 70, scale: 0.95, autoAlpha: 0 });
     cardTriggers = ScrollTrigger.batch(".reveal-card", {
-      start: "top 90%",
+      start: "top 92%",
       once: true,
-      onEnter: (cards) => gsap.to(cards, { y: 0, autoAlpha: 1, duration: 0.8, ease: "power3.out", stagger: 0.08 }),
+      onEnter: (cards) => gsap.to(cards, { y: 0, scale: 1, autoAlpha: 1, duration: 0.9, ease: "power3.out", stagger: 0.1 }),
+    });
+    animateAppDetails();
+    animateSitePreviews();
+  };
+
+  const onEnterView = (trigger, animation) => {
+    const scrollTrigger = ScrollTrigger.create({ trigger, start: "top 82%", once: true, onEnter: animation });
+    cardTriggers.push(scrollTrigger);
+  };
+
+  const animateAppDetails = () => {
+    $$(".app").forEach((app) => {
+      gsap.set(app.querySelector(".app-icon"), { scale: 0.4, rotate: -14, autoAlpha: 0 });
+      gsap.set(app.querySelectorAll(".badge"), { y: 18, autoAlpha: 0 });
+      gsap.set(app.querySelectorAll(".app-shots img"), { y: 110, rotate: 5, autoAlpha: 0 });
+      onEnterView(app, () => {
+        gsap.to(app.querySelector(".app-icon"), { scale: 1, rotate: 0, autoAlpha: 1, duration: 0.8, ease: "back.out(1.8)", delay: 0.2 });
+        gsap.to(app.querySelectorAll(".badge"), { y: 0, autoAlpha: 1, duration: 0.6, ease: "power3.out", stagger: 0.1, delay: 0.45 });
+        gsap.to(app.querySelectorAll(".app-shots img"), {
+          y: 0, rotate: 0, autoAlpha: 1, duration: 1, ease: "power3.out", stagger: 0.14, delay: 0.25, clearProps: "transform",
+        });
+      });
+    });
+  };
+
+  const animateSitePreviews = () => {
+    $$(".site-card").forEach((card) => {
+      const preview = card.querySelector(".browser-view img");
+      gsap.set(preview, { scale: 1.22 });
+      onEnterView(card, () => gsap.to(preview, { scale: 1, duration: 1.5, ease: "power3.out", clearProps: "transform" }));
     });
   };
 
@@ -493,9 +554,10 @@
     $$(".stat-num").forEach((node) => {
       const counter = { value: 0 };
       const { value, suffix } = node.dataset;
+      node.textContent = `0${suffix}`;
       gsap.to(counter, {
-        value: Number(value), duration: 1.8, ease: "power2.out",
-        scrollTrigger: { trigger: node, start: "top 88%", once: true },
+        value: Number(value), duration: 2, ease: "power2.out",
+        scrollTrigger: { trigger: node, start: "top 90%", once: true },
         onUpdate: () => { node.textContent = `${Math.round(counter.value).toLocaleString("en-US")}${suffix}`; },
       });
     });
@@ -503,19 +565,29 @@
 
   const setupScrollMotion = () => {
     if (!animate) return;
-    gsap.utils.toArray(".heading, .contact-title, .kicker, .reveal").forEach((node) => {
+    $$(".heading, .contact-title").forEach((node) => revealWords(node));
+    revealWords($(".lead"), { yPercent: 105, duration: 0.8, stagger: 0.035 });
+    gsap.utils.toArray(".kicker:not(#collectionCount), .reveal:not(.lead)").forEach((node) => {
       gsap.from(node, {
-        y: 44, autoAlpha: 0, duration: 0.9, ease: "power3.out",
-        scrollTrigger: { trigger: node, start: "top 88%", once: true },
+        y: 34, autoAlpha: 0, duration: 0.9, ease: "power3.out",
+        scrollTrigger: { trigger: node, start: "top 92%", once: true },
       });
     });
-    gsap.from(".matrix-item", {
-      y: 40, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12,
-      scrollTrigger: { trigger: "#matrix", start: "top 82%", once: true },
+    gsap.from(".marquee", {
+      clipPath: "inset(0 100% 0 0)", duration: 1.3, ease: "power4.inOut", clearProps: "clipPath",
+      scrollTrigger: { trigger: ".marquee", start: "top 96%", once: true },
     });
-    gsap.to(SITE.photo ? ".portrait-photo" : "#portrait img", {
-      yPercent: 5, ease: "none",
-      scrollTrigger: { trigger: ".hero-portrait", start: "top 70%", end: "bottom top", scrub: true },
+    gsap.from("#socials a", {
+      y: 20, autoAlpha: 0, duration: 0.6, ease: "power3.out", stagger: 0.1,
+      scrollTrigger: { trigger: "#socials", start: "top 95%", once: true },
+    });
+    gsap.from(".foot > *", {
+      y: 24, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.12,
+      scrollTrigger: { trigger: ".foot", start: "top 98%", once: true },
+    });
+    gsap.to("#portrait", {
+      yPercent: -5, ease: "none",
+      scrollTrigger: { trigger: ".hero-portrait", start: "top 60%", end: "bottom top", scrub: true },
     });
     gsap.to(".hero-title", {
       yPercent: -12, ease: "none",
@@ -523,18 +595,25 @@
     });
   };
 
-  const playIntro = () => {
-    gsap.from(".hero-title .ch", { yPercent: 110, duration: 1.1, ease: "power4.out", stagger: 0.05 });
-    gsap.from(".hero-eyebrow, .top, .hero-copy > *, .hero-facts", {
-      y: 26, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.07, delay: 0.35,
-    });
-    gsap.from(".portrait-frame", {
-      clipPath: "inset(100% 0 0 0)", duration: 1.2, ease: "power4.inOut", delay: 0.25, clearProps: "clipPath",
-    });
-    if (SITE.photo) {
-      gsap.from(".portrait-photo", { yPercent: 28, autoAlpha: 0, duration: 1.4, ease: "power4.out", delay: 0.7 });
-    }
-    gsap.from(".dock", { y: 90, duration: 0.8, ease: "power3.out", delay: 0.9, clearProps: "transform" });
+  // The timeline is built while the loader still covers the page, so every element starts hidden.
+  const buildIntro = () => {
+    const nameWords = splitWords($(".hero-name"));
+    const bioWords = splitWords($(".hero-bio"));
+    return gsap.timeline({ paused: true })
+      .from(".top-logo img", { autoAlpha: 0, scale: 0.7, filter: "blur(10px)", duration: 1, ease: "power3.out", clearProps: "filter" }, 0)
+      .from(".top-role", { autoAlpha: 0, y: -16, duration: 0.7, ease: "power3.out" }, 0.25)
+      .from(".hero-eyebrow", { autoAlpha: 0, y: 22, duration: 0.7, ease: "power3.out" }, 0.3)
+      .from(".hero-title .ch", { yPercent: 112, duration: 1.2, ease: "power4.out", stagger: 0.055 }, 0.35)
+      .from(".portrait-frame", { clipPath: "inset(100% 0 0 0)", duration: 1.2, ease: "power4.inOut", clearProps: "clipPath" }, 0.55)
+      .from(".portrait-photo", { yPercent: 24, scale: 1.1, autoAlpha: 0, duration: 1.5, ease: "power4.out" }, 0.95)
+      .from(".portrait-tag", { autoAlpha: 0, duration: 0.7 }, 1.9)
+      .from(".hero-hello", { autoAlpha: 0, y: 20, duration: 0.6, ease: "power3.out" }, 0.85)
+      .from(nameWords, { yPercent: 115, duration: 1, ease: "power4.out", stagger: 0.1 }, 0.95)
+      .from(".name-rule", { scaleX: 0, duration: 0.9, ease: "power3.inOut" }, 1.3)
+      .from(bioWords, { yPercent: 110, autoAlpha: 0, duration: 0.6, ease: "power3.out", stagger: 0.016 }, 1.35)
+      .from(".hero-actions .btn", { y: 26, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 1.9)
+      .from(".hero-facts li", { y: 30, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 2)
+      .from(".dock", { y: 90, autoAlpha: 0, duration: 0.8, ease: "power3.out", clearProps: "transform,opacity,visibility" }, 2.2);
   };
 
   const finishLoading = () => {
@@ -544,6 +623,7 @@
 
   const runLoader = () => {
     if (!animate) { finishLoading(); return; }
+    const intro = buildIntro();
     const counter = { value: 0 };
     const number = $("#loaderNum");
     const timeline = gsap.timeline()
@@ -554,14 +634,15 @@
       }, 0)
       .to("#loader", {
         clipPath: "inset(0 0 100% 0)", duration: 0.9, ease: "power4.inOut",
-        onStart: playIntro,
         onComplete: finishLoading,
-      });
+      })
+      .add(() => intro.play(), "-=0.3");
     // Background tabs pause animation frames, so the loader also has a hard limit.
     setTimeout(() => {
       if (!$("#loader")) return;
       timeline.kill();
       finishLoading();
+      intro.play();
     }, 7000);
   };
 
@@ -601,6 +682,7 @@
   // Slow font servers must not hold the page behind the loader.
   const fontsReady = document.fonts?.ready ?? Promise.resolve();
   const fontTimeout = new Promise((resolve) => { setTimeout(resolve, 1800); });
+  fontsReady.then(fitTitle);
   Promise.race([fontsReady, fontTimeout]).then(() => {
     fitTitle();
     runLoader();

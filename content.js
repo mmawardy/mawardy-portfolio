@@ -15,9 +15,9 @@ window.SITE = {
   // Download and rating numbers come from Google Play (checked Nov 2026).
   stats: [
     { value: 100, suffix: "K+", label: { ar: "تنزيل للعبة واحدة على Google Play", en: "downloads for a single Google Play game" } },
-    { value: 2400, suffix: "+", label: { ar: "تقييم من مستخدمين حقيقيين", en: "ratings from real users" } },
+    { value: 2400, suffix: "+", label: { ar: "تقييم من المستخدمين", en: "user ratings" } },
     { value: 3, suffix: "", label: { ar: "تطبيقات وألعاب منشورة", en: "published apps and games" } },
-    { value: 4, suffix: "", label: { ar: "مواقع شغالة أونلاين", en: "websites live online" } },
+    { value: 4, suffix: "", label: { ar: "مواقع منشورة", en: "published websites" } },
     { value: 58, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
     { value: 8, suffix: "", label: { ar: "قطاعات من العقارات للطب", en: "industries, from real estate to healthcare" } },
   ],
@@ -27,7 +27,7 @@ window.SITE = {
       name: "Guess The Football Player",
       kind: { ar: "لعبة كرة قدم", en: "Football quiz game" },
       desc: {
-        ar: "لعبة تخمين لاعبي كرة القدم من الصورة، تخطت 100 ألف تنزيل على Google Play.",
+        ar: "لعبة لتخمين لاعبي كرة القدم من الصورة، تجاوزت 100 ألف تنزيل على Google Play.",
         en: "A football quiz where you guess the player from the photo, past 100,000 downloads on Google Play.",
       },
       badges: [
@@ -57,7 +57,7 @@ window.SITE = {
       name: "MAWARDY",
       kind: { ar: "منصة بيع وشراء", en: "Classifieds platform" },
       desc: {
-        ar: "منصة كاملة لبيع وشراء العقارات والعربيات والدهب في مصر، فيها بحث ومحادثات مع البائعين.",
+        ar: "منصة متكاملة لبيع وشراء العقارات والسيارات والذهب في مصر، تتضمن البحث والمحادثة مع البائعين.",
         en: "A full platform for buying and selling properties, cars and gold in Egypt, with search and seller chat.",
       },
       badges: [{ ar: "أحدث إطلاق", en: "Latest launch" }],
