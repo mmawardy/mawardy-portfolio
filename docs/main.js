@@ -656,8 +656,21 @@
     gsap.to(".hero-glow", { scale: 1.12, opacity: 0.8, duration: 3.4, ease: "sine.inOut", repeat: -1, yoyo: true });
   };
 
+  // The finished image fades in over the engraving so the logo ends up perfectly sharp.
+  const startLogoEngraving = () => {
+    const logo = $(".top-logo img");
+    const revealLogo = () => gsap.to(logo, { autoAlpha: 1, duration: 0.35 });
+    window.engraveLogo(logo, {
+      onDone: (canvas) => {
+        revealLogo();
+        gsap.to(canvas, { autoAlpha: 0, duration: 0.35, onComplete: () => canvas.remove() });
+      },
+    }).catch(revealLogo);
+  };
+
   // The timeline is built while the loader still covers the page, so every element starts hidden.
   const buildIntro = () => {
+    gsap.set(".top-logo img", { autoAlpha: 0 });
     const bioWords = splitWords($(".hero-bio"));
     const factNumbers = $$(".hero-facts b");
     const stats = heroFactStats();
@@ -665,7 +678,7 @@
     factNumbers.forEach((node, index) => { node.textContent = `0${stats[index].suffix}`; });
     const timeline = gsap.timeline({ paused: true })
       .from(".hero-wall-col", { yPercent: 14, autoAlpha: 0, duration: 1.6, ease: "power3.out", stagger: 0.09 }, 0)
-      .from(".top-logo img", { autoAlpha: 0, scale: 0.7, filter: "blur(10px)", duration: 1, ease: "power3.out", clearProps: "filter" }, 0.1)
+      .add(startLogoEngraving, 0.1)
       .from(".top-role", { autoAlpha: 0, y: -16, duration: 0.7, ease: "power3.out" }, 0.3)
       .from(".hero-title .ch", { yPercent: 118, duration: 1.3, ease: "power4.out", stagger: 0.07 }, 0.3)
       .from(".hero-glow", { autoAlpha: 0, scale: 0.4, duration: 1.5, ease: "power3.out" }, 0.55)
