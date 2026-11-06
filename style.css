@@ -108,7 +108,7 @@ a.btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
 .portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
 .portrait-frame img.is-mark { width: 62%; height: auto; object-fit: contain; }
 .portrait-frame.has-photo { position: relative; overflow: visible; background: var(--burgundy); align-items: flex-end; }
-.portrait-frame.has-photo .portrait-photo { position: relative; z-index: 1; width: 100%; height: 112%; object-fit: contain; object-position: bottom; transform-origin: bottom center; filter: drop-shadow(0 18px 34px rgba(30, 3, 9, .45)); }
+.portrait-frame.has-photo .portrait-photo { position: relative; z-index: 1; width: 100%; height: 112%; object-fit: contain; object-position: bottom; transform-origin: bottom center; }
 .portrait-tag {
   z-index: 2; position: absolute; bottom: 14px; inset-inline-start: 50%; transform: translateX(-50%);
   padding: 2px 14px; white-space: nowrap;
@@ -314,7 +314,7 @@ html[dir="rtl"] .site-arrow { transform: scaleX(-1); }
 .dock {
   position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); z-index: 40;
   display: flex; align-items: center; gap: 2px; padding: 5px; max-width: calc(100vw - 16px);
-  background: rgba(61, 7, 19, .88); backdrop-filter: blur(12px); border: 1px solid var(--line); border-radius: 999px;
+  background: #3D0713; border: 1px solid var(--line); border-radius: 999px;
 }
 .dock a, .dock-lang {
   display: flex; align-items: center; min-height: 40px; padding: 4px 15px; border: 0; border-radius: 999px;

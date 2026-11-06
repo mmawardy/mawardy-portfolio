@@ -421,7 +421,7 @@
   const startSparkles = () => {
     const canvas = $("#sparks");
     const ctx = canvas.getContext("2d");
-    const ratio = Math.min(devicePixelRatio || 1, 1.5);
+    const ratio = 1;
     const sparks = [];
     const CREAM = "243,232,214";
 
@@ -453,9 +453,19 @@
       ctx.fill();
     };
 
+    // Ambient sparkles stay in the hero, and an empty canvas is not redrawn, to keep scrolling light.
+    let canvasIsClear = true;
     const tick = () => {
+      requestAnimationFrame(tick);
+      const inHero = scrollY < innerHeight * 0.8;
+      if (inHero && sparks.length < 18 && Math.random() < 0.06) spawn(Math.random() * innerWidth, Math.random() * innerHeight, false);
+      if (!sparks.length) {
+        if (!canvasIsClear) ctx.clearRect(0, 0, innerWidth, innerHeight);
+        canvasIsClear = true;
+        return;
+      }
+      canvasIsClear = false;
       ctx.clearRect(0, 0, innerWidth, innerHeight);
-      if (sparks.length < 30 && Math.random() < 0.08) spawn(Math.random() * innerWidth, Math.random() * innerHeight, false);
       for (let i = sparks.length - 1; i >= 0; i -= 1) {
         const spark = sparks[i];
         spark.life += 1;
@@ -464,7 +474,6 @@
         if (spark.life >= spark.maxLife) { sparks.splice(i, 1); continue; }
         drawStar(spark, Math.sin((spark.life / spark.maxLife) * Math.PI) * 0.85);
       }
-      requestAnimationFrame(tick);
     };
 
     let lastX = 0;
