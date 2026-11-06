@@ -421,7 +421,7 @@
   const startSparkles = () => {
     const canvas = $("#sparks");
     const ctx = canvas.getContext("2d");
-    const ratio = Math.min(devicePixelRatio || 1, 2);
+    const ratio = Math.min(devicePixelRatio || 1, 1.5);
     const sparks = [];
     const CREAM = "243,232,214";
 
@@ -574,7 +574,7 @@
       });
     });
     gsap.from(".marquee", {
-      clipPath: "inset(0 100% 0 0)", duration: 1.3, ease: "power4.inOut", clearProps: "clipPath",
+      autoAlpha: 0, y: 28, duration: 0.9, ease: "power3.out", clearProps: "all",
       scrollTrigger: { trigger: ".marquee", start: "top 96%", once: true },
     });
     gsap.from("#socials a", {
