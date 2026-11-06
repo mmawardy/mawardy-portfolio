@@ -18,7 +18,7 @@ window.SITE = {
     { value: 2400, suffix: "+", label: { ar: "تقييم من مستخدمين حقيقيين", en: "ratings from real users" } },
     { value: 3, suffix: "", label: { ar: "تطبيقات وألعاب منشورة", en: "published apps and games" } },
     { value: 4, suffix: "", label: { ar: "مواقع شغالة أونلاين", en: "websites live online" } },
-    { value: 59, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
+    { value: 58, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
     { value: 8, suffix: "", label: { ar: "قطاعات من العقارات للطب", en: "industries, from real estate to healthcare" } },
   ],
 
@@ -120,7 +120,6 @@ window.SITE = {
         { title: { ar: "إعلان لعبة خمن اللاعب", en: "Guess The Player Game Ad" }, topic: "APP AD", video: "assets/video/v02.mp4", poster: "assets/posters/v02.jpg" },
         { title: { ar: "Vivo: لحظات يومية", en: "Vivo: Everyday Moments" }, topic: "PRODUCT", video: "assets/video/v13.mp4", poster: "assets/posters/v13.jpg" },
         { title: { ar: "Vivo: يوم عمل", en: "Vivo: On The Go" }, topic: "PRODUCT", video: "assets/video/v14.mp4", poster: "assets/posters/v14.jpg" },
-        { title: { ar: "موشن الانتقالات", en: "Motion Transitions" }, topic: "MOTION", video: "assets/video/v03.mp4", poster: "assets/posters/v03.jpg" },
         { title: { ar: "شوريل التصميم الجرافيكي", en: "Graphic Design Showreel" }, topic: "SHOWREEL", video: "assets/video/v10.mp4", poster: "assets/posters/v10.jpg" },
         { title: { ar: "صيانة طنابير السيارات", en: "Car Brake Drums Explained" }, topic: "AUTOMOTIVE", video: "assets/video/v32.mp4", poster: "assets/posters/v32.jpg" },
       ],
