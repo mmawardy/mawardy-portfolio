@@ -650,6 +650,12 @@
     }
   };
 
+  // Keeps the hero alive after the entrance: the figure floats while the glow breathes.
+  const startHeroIdleMotion = () => {
+    gsap.to(".portrait-photo", { y: -12, rotation: 0.7, duration: 2.8, ease: "sine.inOut", repeat: -1, yoyo: true });
+    gsap.to(".hero-glow", { scale: 1.12, opacity: 0.8, duration: 3.4, ease: "sine.inOut", repeat: -1, yoyo: true });
+  };
+
   // The timeline is built while the loader still covers the page, so every element starts hidden.
   const buildIntro = () => {
     const bioWords = splitWords($(".hero-bio"));
@@ -663,13 +669,14 @@
       .from(".top-role", { autoAlpha: 0, y: -16, duration: 0.7, ease: "power3.out" }, 0.3)
       .from(".hero-title .ch", { yPercent: 118, duration: 1.3, ease: "power4.out", stagger: 0.07 }, 0.3)
       .from(".hero-glow", { autoAlpha: 0, scale: 0.4, duration: 1.5, ease: "power3.out" }, 0.55)
-      .from("#portrait", { yPercent: 34, scale: 0.9, autoAlpha: 0, duration: 1.6, ease: "power4.out", transformOrigin: "50% 100%" }, 0.65)
+      .from("#portrait", { yPercent: 42, scale: 0.72, rotation: -5, autoAlpha: 0, duration: 1.7, ease: "back.out(1.25)", transformOrigin: "50% 100%" }, 0.65)
       .from(".hero-eyebrow", { autoAlpha: 0, y: 22, duration: 0.7, ease: "power3.out" }, 1.15)
       .from(".hero-role-wrap", { autoAlpha: 0, y: 34, duration: 0.8, ease: "power3.out" }, 1.25)
       .from(bioWords, { yPercent: 110, autoAlpha: 0, duration: 0.55, ease: "power3.out", stagger: 0.022 }, 1.4)
       .from(".hero-actions .btn", { y: 26, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 1.75)
       .from(".hero-facts li", { x: lang === "ar" ? -40 : 40, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.14 }, 1.4)
       .from(".dock", { y: 90, autoAlpha: 0, duration: 0.8, ease: "power3.out", clearProps: "transform,opacity,visibility" }, 2);
+    timeline.add(startHeroIdleMotion, 2.2);
     factNumbers.forEach((node, index) => {
       timeline.to(counters[index], {
         value: stats[index].value, duration: 1.8, ease: "power2.out",

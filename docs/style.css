@@ -72,8 +72,8 @@ ul { list-style: none; }
 }
 .hero-stage {
   position: relative; min-height: 100vh; min-height: 100svh;
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1fr);
-  gap: 0 clamp(12px, 2vw, 32px); align-items: end; padding: 0 var(--gutter);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0 clamp(8px, 1.4vw, 24px); align-items: end; padding: 0 var(--gutter);
 }
 .hero-title {
   position: absolute; top: clamp(60px, 7.5vh, 84px); left: var(--gutter); right: var(--gutter); z-index: 0;
@@ -83,12 +83,12 @@ ul { list-style: none; }
 html[lang="ar"] .hero-title { font-weight: 800; line-height: 1.25; padding-block: .1em .5em; margin-bottom: -.4em; }
 .hero-title .ch { display: inline-block; will-change: transform; }
 .hero-glow {
-  position: absolute; left: 50%; bottom: -14vh; z-index: 1; width: min(84vh, 62vw); aspect-ratio: 1; border-radius: 50%;
+  position: absolute; left: 50%; bottom: -4vh; z-index: 1; width: min(84vh, 62vw); aspect-ratio: 1; border-radius: 50%;
   transform: translateX(-50%); background: radial-gradient(circle, rgba(243, 232, 214, .24) 0, rgba(116, 26, 48, .55) 42%, rgba(61, 7, 19, 0) 70%);
 }
-.hero-portrait { grid-column: 2; grid-row: 1; position: relative; z-index: 2; align-self: end; height: 73vh; height: 73svh; display: flex; justify-content: center; }
+.hero-portrait { grid-column: 2; grid-row: 1; position: relative; z-index: 2; align-self: end; height: min(60vh, 38vw); height: min(60svh, 38vw); margin-bottom: 76px; display: flex; justify-content: center; }
 #portrait { height: 100%; display: flex; align-items: flex-end; justify-content: center; will-change: transform; }
-.portrait-photo { display: block; height: 100%; width: auto; max-width: none; object-fit: contain; object-position: bottom; }
+.portrait-photo { display: block; height: 100%; width: auto; max-width: none; object-fit: contain; object-position: bottom; transform-origin: 50% 100%; filter: drop-shadow(0 0 1px rgba(243, 232, 214, .35)); }
 #portrait img.is-mark { height: 50%; }
 .hero-side { position: relative; z-index: 3; grid-row: 1; padding-bottom: clamp(88px, 13vh, 118px); }
 .hero-copy { grid-column: 1; }
@@ -341,8 +341,9 @@ html[dir="rtl"] .dock-lang { border-radius: 999px 0 0 999px; }
   .hero-stage { grid-template-columns: minmax(0, 1fr); padding-top: 84px; padding-bottom: 104px; align-items: start; }
   .hero-title { position: relative; top: auto; left: auto; right: auto; grid-row: 1; grid-column: 1; }
   .hero-glow { bottom: auto; top: 13vh; width: 92vw; }
-  .hero-portrait { grid-row: 2; grid-column: 1; height: max(50vh, 320px); height: max(50svh, 320px); margin-top: -9vw; }
-  .portrait-photo { -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); }
+  .hero-portrait { grid-row: 2; grid-column: 1; height: auto; margin-top: -7vw; margin-bottom: 0; }
+  #portrait { width: min(88vw, 520px); height: auto; }
+  .portrait-photo { width: 100%; height: auto; }
   .hero-copy { grid-row: 3; grid-column: 1; padding-bottom: 0; text-align: center; margin-top: 12px; }
   .hero-eyebrow, .hero-actions { justify-content: center; }
   .hero-bio { margin-inline: auto; }

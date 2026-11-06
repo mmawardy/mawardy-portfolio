@@ -4,7 +4,7 @@ const VIDEO_BASE = "https://raw.githubusercontent.com/mmawardy/mawardy-portfolio
 
 window.SITE = {
   // Portrait path, e.g. "assets/img/mohamed.png". Empty shows the logo mark.
-  photo: "assets/img/mohamed-portrait-2.webp",
+  photo: "assets/img/mawardy-hero-sand.webp",
 
   // International format without "+", e.g. "201000000000".
   whatsapp: "201065295984",
