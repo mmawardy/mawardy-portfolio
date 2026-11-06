@@ -9,10 +9,10 @@
     ar: {
       topRole: "مونتاج · موشن جرافيك · تطوير رقمي",
       eyebrow: "مونتير · مصمم موشن جرافيك · مطوّر برمجيات",
-      title: "بورتفوليو",
+      title: "المواردي",
       hello: "مرحبًا، أنا",
       name: "محمد المواردي",
-      bio: "أصنع محتوى مرئيًا يُحدث أثرًا، وأطوّر مواقع وتطبيقات وألعابًا تصل إلى المستخدمين، من الحملات الإعلانية للعلامات التجارية إلى لعبة تجاوزت 100 ألف تنزيل على Google Play.",
+      bio: "أصنع محتوى مرئيًا يُحدث أثرًا، وأطوّر مواقع وتطبيقات وألعابًا تصل إلى المستخدمين.",
       ctaWork: "استعرض أعمالي",
       ctaContact: "ابدأ مشروعك",
       portraitTag: "محمد المواردي",
@@ -38,10 +38,10 @@
     en: {
       topRole: "Video · Motion · Development",
       eyebrow: "VIDEO EDITOR · MOTION DESIGNER · DEVELOPER",
-      title: "Portfolio",
+      title: "Mawardy",
       hello: "Hello, I'm",
       name: "Mohamed Almawardy",
-      bio: "I create video content that makes an impact and build websites, apps and games that reach real users, from brand campaigns to a Google Play game with more than 100,000 downloads.",
+      bio: "I create video content that makes an impact, and build websites, apps and games that reach real users.",
       ctaWork: "View my work",
       ctaContact: "Start a project",
       portraitTag: "Mohamed Almawardy",
@@ -64,6 +64,11 @@
       navHome: "Home", navVideo: "Video", navWeb: "Web", navApps: "Apps", navContact: "Contact",
       lang: "عربي",
     },
+  };
+
+  const ROLES = {
+    ar: ["مونتير فيديو", "مصمم موشن جرافيك", "مطوّر مواقع", "مطوّر تطبيقات وألعاب"],
+    en: ["Video Editor", "Motion Designer", "Web Developer", "App & Game Developer"],
   };
 
   const MATRIX = {
@@ -115,8 +120,7 @@
 
   const fitTitle = () => {
     const title = $("#heroTitle");
-    const available = title.parentElement.clientWidth
-      - parseFloat(getComputedStyle(title.parentElement).paddingInlineStart) * 2;
+    const available = title.clientWidth;
     title.style.fontSize = "100px";
     const measure = document.createElement("span");
     measure.style.cssText = "display:inline-block;visibility:hidden;position:absolute";
@@ -124,7 +128,7 @@
     title.append(measure);
     const width = measure.getBoundingClientRect().width;
     measure.remove();
-    const heightCap = innerHeight * (lang === "ar" ? 0.3 : 0.42);
+    const heightCap = innerHeight * (innerWidth > 900 ? (lang === "ar" ? 0.27 : 0.38) : 0.3);
     title.style.fontSize = `${Math.min((100 * available) / width, heightCap)}px`;
   };
 
@@ -288,8 +292,10 @@
     return stat;
   };
 
+  const heroFactStats = () => [SITE.stats[0], SITE.stats[1], SITE.stats[4]];
+
   const renderHeroFacts = () => {
-    $("#heroFacts").replaceChildren(...SITE.stats.slice(0, 3).map((stat) => {
+    $("#heroFacts").replaceChildren(...heroFactStats().map((stat) => {
       const row = el("li");
       row.append(el("b", "", `${stat.value.toLocaleString("en-US")}${stat.suffix}`), el("span", "", stat.label[lang]));
       return row;
@@ -337,28 +343,67 @@
   };
 
   const renderPortrait = () => {
-    const frame = $("#portrait");
-    if (!SITE.photo) {
-      const mark = image("assets/img/mark-burgundy.png");
-      mark.classList.add("is-mark");
-      frame.replaceChildren(mark);
-      return;
-    }
-    frame.classList.add("has-photo");
-    const photo = image(SITE.photo, t("name"));
+    const photo = image(SITE.photo || "assets/img/mark-cream.png", t("name"));
     photo.classList.add("portrait-photo");
+    if (!SITE.photo) photo.classList.add("is-mark");
     photo.loading = "eager";
-    frame.replaceChildren(photo);
+    $("#portrait").replaceChildren(photo);
   };
 
-  // The cut-out leans gently toward the pointer.
+  const renderHeroWall = () => {
+    const posters = SITE.videoGroups.flatMap((group) => group.items.map((item) => item.poster));
+    const columns = Array.from({ length: 6 }, (_, column) => {
+      const col = el("div", "hero-wall-col");
+      const track = el("div", "hero-wall-track");
+      const picks = Array.from({ length: 5 }, (_, row) => posters[(column * 5 + row * 3) % posters.length]);
+      // The list is doubled so the -50% loop has no visible seam.
+      [...picks, ...picks].forEach((src) => {
+        const tile = image(src);
+        tile.loading = "eager";
+        track.append(tile);
+      });
+      col.append(track);
+      return col;
+    });
+    $("#heroWall").replaceChildren(...columns);
+  };
+
+  let roleIndex = 0;
+  const renderRole = () => { $("#heroRole").textContent = ROLES[lang][roleIndex % ROLES[lang].length]; };
+
+  const startRoleLoop = () => {
+    const role = $("#heroRole");
+    setInterval(() => {
+      if (document.hidden) return;
+      if (!animate) { roleIndex += 1; renderRole(); return; }
+      gsap.to(role, {
+        yPercent: -115, autoAlpha: 0, duration: 0.4, ease: "power2.in",
+        onComplete: () => {
+          roleIndex += 1;
+          renderRole();
+          gsap.fromTo(role, { yPercent: 115, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, duration: 0.65, ease: "power3.out" });
+        },
+      });
+    }, 2800);
+  };
+
+  // Layers move at different speeds toward the pointer to create depth.
   const setupPortraitMotion = () => {
-    if (!animate || !SITE.photo || !matchMedia("(hover: hover)").matches) return;
-    const moveX = gsap.quickTo(".portrait-photo", "x", { duration: 0.8, ease: "power3.out" });
-    const moveY = gsap.quickTo(".portrait-photo", "y", { duration: 0.8, ease: "power3.out" });
+    if (!animate || !matchMedia("(hover: hover)").matches) return;
+    const layers = [["#portrait", 26, 12], [".hero-title", -34, -10], ["#heroWall", -18, -14], [".hero-glow", 16, 8]];
+    const movers = layers.map(([selector, rangeX, rangeY]) => ({
+      moveX: gsap.quickTo(selector, "x", { duration: 1, ease: "power3.out" }),
+      moveY: gsap.quickTo(selector, "y", { duration: 1, ease: "power3.out" }),
+      rangeX, rangeY,
+    }));
     addEventListener("pointermove", ({ clientX, clientY }) => {
-      moveX((clientX / innerWidth - 0.5) * 22);
-      moveY((clientY / innerHeight - 0.5) * 12);
+      if (scrollY > innerHeight) return;
+      const offsetX = clientX / innerWidth - 0.5;
+      const offsetY = clientY / innerHeight - 0.5;
+      movers.forEach(({ moveX, moveY, rangeX, rangeY }) => {
+        moveX(offsetX * rangeX);
+        moveY(offsetY * rangeY);
+      });
     }, { passive: true });
   };
 
@@ -391,6 +436,7 @@
 
   const renderAll = () => {
     renderStaticText();
+    renderRole();
     renderTitle();
     renderWork();
     renderMatrix();
@@ -594,35 +640,40 @@
       y: 24, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.12,
       scrollTrigger: { trigger: ".foot", start: "top 98%", once: true },
     });
-    gsap.to("#portrait", {
-      yPercent: -5, ease: "none",
-      scrollTrigger: { trigger: ".hero-portrait", start: "top 60%", end: "bottom top", scrub: true },
-    });
-    gsap.to(".hero-title", {
-      yPercent: -12, ease: "none",
-      scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true },
-    });
+    const heroScrub = { trigger: ".hero", start: "top top", end: "bottom top", scrub: 0.6 };
+    gsap.to(".hero-stage", { yPercent: 16, ease: "none", scrollTrigger: heroScrub });
+    gsap.to(".hero-portrait", { scale: 0.88, transformOrigin: "50% 100%", ease: "none", scrollTrigger: heroScrub });
+    gsap.to(".hero-side", { autoAlpha: 0, ease: "none", scrollTrigger: { ...heroScrub, end: "60% top" } });
+    gsap.to(".hero-shade", { backgroundColor: "#3D0713", ease: "none", scrollTrigger: heroScrub });
   };
 
   // The timeline is built while the loader still covers the page, so every element starts hidden.
   const buildIntro = () => {
-    const nameWords = splitWords($(".hero-name"));
     const bioWords = splitWords($(".hero-bio"));
-    return gsap.timeline({ paused: true })
-      .from(".top-logo img", { autoAlpha: 0, scale: 0.7, filter: "blur(10px)", duration: 1, ease: "power3.out", clearProps: "filter" }, 0)
-      .from(".top-role", { autoAlpha: 0, y: -16, duration: 0.7, ease: "power3.out" }, 0.25)
-      .from(".hero-eyebrow", { autoAlpha: 0, y: 22, duration: 0.7, ease: "power3.out" }, 0.3)
-      .from(".hero-title .ch", { yPercent: 112, duration: 1.2, ease: "power4.out", stagger: 0.055 }, 0.35)
-      .from(".portrait-frame", { clipPath: "inset(100% 0 0 0)", duration: 1.2, ease: "power4.inOut", clearProps: "clipPath" }, 0.55)
-      .from(".portrait-photo", { yPercent: 24, scale: 1.1, autoAlpha: 0, duration: 1.5, ease: "power4.out" }, 0.95)
-      .from(".portrait-tag", { autoAlpha: 0, duration: 0.7 }, 1.9)
-      .from(".hero-hello", { autoAlpha: 0, y: 20, duration: 0.6, ease: "power3.out" }, 0.85)
-      .from(nameWords, { yPercent: 115, duration: 1, ease: "power4.out", stagger: 0.1 }, 0.95)
-      .from(".name-rule", { scaleX: 0, duration: 0.9, ease: "power3.inOut" }, 1.3)
-      .from(bioWords, { yPercent: 110, autoAlpha: 0, duration: 0.6, ease: "power3.out", stagger: 0.016 }, 1.35)
-      .from(".hero-actions .btn", { y: 26, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 1.9)
-      .from(".hero-facts li", { y: 30, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 2)
-      .from(".dock", { y: 90, autoAlpha: 0, duration: 0.8, ease: "power3.out", clearProps: "transform,opacity,visibility" }, 2.2);
+    const factNumbers = $$(".hero-facts b");
+    const stats = heroFactStats();
+    const counters = stats.map(() => ({ value: 0 }));
+    factNumbers.forEach((node, index) => { node.textContent = `0${stats[index].suffix}`; });
+    const timeline = gsap.timeline({ paused: true })
+      .from(".hero-wall-col", { yPercent: 14, autoAlpha: 0, duration: 1.6, ease: "power3.out", stagger: 0.09 }, 0)
+      .from(".top-logo img", { autoAlpha: 0, scale: 0.7, filter: "blur(10px)", duration: 1, ease: "power3.out", clearProps: "filter" }, 0.1)
+      .from(".top-role", { autoAlpha: 0, y: -16, duration: 0.7, ease: "power3.out" }, 0.3)
+      .from(".hero-title .ch", { yPercent: 118, duration: 1.3, ease: "power4.out", stagger: 0.07 }, 0.3)
+      .from(".hero-glow", { autoAlpha: 0, scale: 0.4, duration: 1.5, ease: "power3.out" }, 0.55)
+      .from("#portrait", { yPercent: 34, scale: 0.9, autoAlpha: 0, duration: 1.6, ease: "power4.out", transformOrigin: "50% 100%" }, 0.65)
+      .from(".hero-eyebrow", { autoAlpha: 0, y: 22, duration: 0.7, ease: "power3.out" }, 1.15)
+      .from(".hero-role-wrap", { autoAlpha: 0, y: 34, duration: 0.8, ease: "power3.out" }, 1.25)
+      .from(bioWords, { yPercent: 110, autoAlpha: 0, duration: 0.55, ease: "power3.out", stagger: 0.022 }, 1.4)
+      .from(".hero-actions .btn", { y: 26, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 1.75)
+      .from(".hero-facts li", { x: lang === "ar" ? -40 : 40, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.14 }, 1.4)
+      .from(".dock", { y: 90, autoAlpha: 0, duration: 0.8, ease: "power3.out", clearProps: "transform,opacity,visibility" }, 2);
+    factNumbers.forEach((node, index) => {
+      timeline.to(counters[index], {
+        value: stats[index].value, duration: 1.8, ease: "power2.out",
+        onUpdate: () => { node.textContent = `${Math.round(counters[index].value).toLocaleString("en-US")}${stats[index].suffix}`; },
+      }, 1.5 + index * 0.14);
+    });
+    return timeline;
   };
 
   const finishLoading = () => {
@@ -681,12 +732,14 @@
 
   $("#year").textContent = new Date().getFullYear();
   renderPortrait();
+  renderHeroWall();
   renderContact();
   renderMarquee();
   renderAll();
   setupDock();
   setupScrollMotion();
   setupPortraitMotion();
+  startRoleLoop();
   if (!prefersReducedMotion) startSparkles();
   // Slow font servers must not hold the page behind the loader.
   const fontsReady = document.fonts?.ready ?? Promise.resolve();

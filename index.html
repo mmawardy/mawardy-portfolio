@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=Anton&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body class="is-loading">
 
@@ -28,14 +28,15 @@
 
 <main>
   <section id="home" class="hero">
-    <p class="hero-eyebrow"><span class="dot"></span><span data-i18n="eyebrow"></span></p>
-    <h1 class="hero-title" id="heroTitle"></h1>
+    <div class="hero-wall" id="heroWall" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-stage">
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <div class="hero-glow" aria-hidden="true"></div>
 
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="hero-hello" data-i18n="hello"></p>
-        <h2 class="hero-name" data-i18n="name"></h2>
-        <span class="name-rule" aria-hidden="true"></span>
+      <div class="hero-side hero-copy">
+        <p class="hero-eyebrow"><span class="dot"></span><span data-i18n="name"></span></p>
+        <p class="hero-role-wrap"><span class="hero-role" id="heroRole"></span></p>
         <p class="hero-bio" data-i18n="bio"></p>
         <div class="hero-actions">
           <a class="btn btn-solid" href="#video" data-i18n="ctaWork"></a>
@@ -43,12 +44,9 @@
         </div>
       </div>
 
-      <div class="hero-portrait">
-        <div class="portrait-frame" id="portrait"></div>
-        <p class="portrait-tag" data-i18n="portraitTag"></p>
-      </div>
+      <div class="hero-portrait"><div id="portrait"></div></div>
 
-      <ul class="hero-facts" id="heroFacts"></ul>
+      <ul class="hero-side hero-facts" id="heroFacts"></ul>
     </div>
   </section>
 
@@ -135,7 +133,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="content.js?v=5"></script>
-<script src="main.js?v=5"></script>
+<script src="content.js?v=6"></script>
+<script src="main.js?v=7"></script>
 </body>
 </html>
