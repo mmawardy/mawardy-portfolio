@@ -343,7 +343,7 @@
   };
 
   const renderPortrait = () => {
-    const photo = image(SITE.photo || "assets/img/mark-cream.png", t("name"));
+    const photo = image(SITE.photo || "assets/img/mark-sand.png", t("name"));
     photo.classList.add("portrait-photo");
     if (!SITE.photo) photo.classList.add("is-mark");
     photo.loading = "eager";
@@ -470,7 +470,7 @@
     const ctx = canvas.getContext("2d");
     const ratio = 1;
     const sparks = [];
-    const CREAM = "243,232,214";
+    const SPARK_COLOR = "248,212,177";
 
     const resize = () => {
       canvas.width = innerWidth * ratio;
@@ -490,7 +490,7 @@
     });
 
     const drawStar = ({ x, y, size }, alpha) => {
-      ctx.fillStyle = `rgba(${CREAM},${alpha})`;
+      ctx.fillStyle = `rgba(${SPARK_COLOR},${alpha})`;
       ctx.beginPath();
       ctx.moveTo(x, y - size);
       ctx.quadraticCurveTo(x, y, x + size, y);
