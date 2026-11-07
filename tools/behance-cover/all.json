@@ -1,0 +1,16 @@
+[
+ {"out":"01-business-consulting.jpg","num":"01","topic":"Business / Reels","l1":"Business","l2":"Consulting","ar":"استشارات الأعمال","imgs":["Unity_2.jpg","Unity_3.jpg","Unity_1.jpg"],"seed":11},
+ {"out":"02-healthcare.jpg","num":"02","topic":"Health / Reels","l1":"Healthcare","l2":"","ar":"القطاع الطبي","imgs":["Doctors_1.jpg","Doctors_3.jpg","Doctors_4.jpg"],"seed":12},
+ {"out":"03-sports-fitness.jpg","num":"03","topic":"Fitness / Reels","l1":"Sports &","l2":"Fitness","ar":"الرياضة واللياقة","imgs":["Gym_3.jpg","Gym_5.jpg","Gym_4.jpg"],"seed":13},
+ {"out":"04-real-estate.jpg","num":"04","topic":"Real Estate / Reels","l1":"Real","l2":"Estate","ar":"العقارات","imgs":["RE_1.jpg","RE_3.jpg","RE_2.jpg"],"seed":14},
+ {"out":"05-latin-district.jpg","num":"05","topic":"Real Estate / Project","l1":"The Latin","l2":"District","ar":"الحي اللاتيني، العلمين الجديدة","imgs":["Latin_1.jpg"],"seed":15},
+ {"out":"06-tp-into-nature.jpg","num":"06","topic":"Travel / Promo","l1":"Into","l2":"Nature","ar":"ترافل بوزيتيفلي · رحلة الطبيعة","imgs":["TravPromo_1.jpg"],"seed":16},
+ {"out":"07-tp-bahrain.jpg","num":"07","topic":"Travel / Ad","l1":"Travel","l2":"Bahrain","ar":"ترافل بوزيتيفلي · البحرين","imgs":["TravAd_1.jpg"],"seed":17},
+ {"out":"08-digital-marketing.jpg","num":"08","topic":"Agency / Ad","l1":"Digital","l2":"Marketing","ar":"خدمات التسويق الرقمي","imgs":["Mkt_1.jpg"],"seed":18},
+ {"out":"09-snack-shop.jpg","num":"09","topic":"Food / Reels","l1":"Snack Shop","l2":"Tour","ar":"جولة في متجر سناكس","imgs":["Food_1.jpg"],"seed":19},
+ {"out":"10-combat-sports.jpg","num":"10","topic":"MMA / Reel","l1":"Inside","l2":"Combat Sports","ar":"عالم الرياضات القتالية","imgs":["MMA_1.jpg"],"seed":20},
+ {"out":"11-fighters-mindset.jpg","num":"11","topic":"Training / Reel","l1":"Fighter's","l2":"Mindset","ar":"عقلية المقاتل","imgs":["Cardio_1.jpg"],"seed":21},
+ {"out":"12-ai-automation.jpg","num":"12","topic":"AI / Reels","l1":"AI","l2":"Automation","ar":"وكالة أتمتة بالذكاء الاصطناعي","imgs":["AI_2.jpg","AI_1.jpg"],"seed":22},
+ {"out":"13-tech-tools.jpg","num":"13","topic":"Tools / Reels","l1":"Tech &","l2":"Tools","ar":"أدوات وتقنية","imgs":["redotpay.png","autodm.jpg"],"seed":23},
+ {"out":"14-mawardy-campaign.jpg","num":"14","topic":"Campaign / Motion","l1":"Mawardy","l2":"Campaign","ar":"حملة مواردي","imgs":["mawardy-asking.jpg","mawardy-price.jpg","mawardy-app.jpg"],"seed":24}
+]

@@ -1,0 +1,82 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600;800&family=Anton&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3D0713;--bur:#5E0B20;--soft:#741A30;--cream:#F8D4B1;--dim:rgba(248,212,177,.72);--line:rgba(248,212,177,.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1616px;height:1264px;overflow:hidden;background:var(--ink)}
+.c{position:relative;width:1616px;height:1264px;overflow:hidden;color:var(--cream);font-family:Montserrat,sans-serif;
+ background:radial-gradient(120% 90% at 78% 40%,#8a1530 0%,#5E0B20 38%,#3D0713 72%,#22030a 100%)}
+/* light streaks */
+.streaks{position:absolute;inset:0;pointer-events:none}
+.streaks i{position:absolute;height:6px;border-radius:6px;filter:blur(7px);opacity:.55;
+ background:linear-gradient(90deg,transparent,rgba(255,215,200,.9),transparent);transform-origin:center}
+.vign{position:absolute;inset:0;background:linear-gradient(90deg,rgba(34,3,10,.92) 0%,rgba(34,3,10,.6) 38%,rgba(34,3,10,0) 62%)}
+.brand{position:absolute;left:96px;top:92px;display:flex;align-items:center;gap:28px}
+.brand img{height:64px}
+.brand .sep{width:2px;height:44px;background:var(--line)}
+.brand .num{font:600 30px Montserrat;letter-spacing:.12em;color:var(--dim)}
+.topic{position:absolute;left:96px;top:330px;font:600 24px Montserrat;letter-spacing:.32em;color:var(--dim);text-transform:uppercase}
+.title{position:absolute;left:92px;top:390px;width:760px;font-family:Anton,sans-serif;text-transform:uppercase;line-height:.98;letter-spacing:.01em}
+.title .l1,.title .l2{white-space:nowrap}
+.title .l1{display:inline-block;font-size:var(--s1,150px);color:var(--cream)}
+.title .l2{display:inline-block;font-size:var(--s2,150px);color:#e9a6ae}
+.ar{position:absolute;left:96px;width:760px;font:800 52px Alexandria,sans-serif;direction:rtl;text-align:left;color:var(--cream);opacity:.92}
+.bar{position:absolute;left:96px;width:110px;height:8px;border-radius:8px;background:#E8873A}
+.foot{position:absolute;left:96px;bottom:92px;font:600 22px Montserrat;letter-spacing:.24em;color:var(--dim)}
+.site{position:absolute;right:96px;bottom:92px;font:600 22px Montserrat;letter-spacing:.2em;color:var(--dim)}
+/* phones */
+.phones{position:absolute;right:70px;top:190px;width:760px;height:1000px}
+.ph{position:absolute;width:var(--w,400px);aspect-ratio:9/16;border-radius:48px;padding:12px;background:linear-gradient(160deg,#f3c9b5,#9b4a55 40%,#2a0610);
+ box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px rgba(255,220,200,.25) inset}
+.ph .scr{width:100%;height:100%;border-radius:38px;overflow:hidden;position:relative;background:#111}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph .notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:34%;height:26px;border-radius:20px;background:#0b0b0b;z-index:2}
+.play{position:absolute;left:50%;top:50%;width:96px;height:96px;margin:-48px;border-radius:50%;background:rgba(94,11,32,.85);border:2px solid rgba(248,212,177,.6);z-index:3}
+.play:after{content:"";position:absolute;left:38px;top:28px;border-left:30px solid var(--cream);border-top:20px solid transparent;border-bottom:20px solid transparent}
+.count{position:absolute;right:96px;top:100px;font:600 22px Montserrat;letter-spacing:.2em;color:var(--dim)}
+</style></head>
+<body><div class="c" id="c">
+ <div class="streaks" id="streaks"></div>
+ <div class="phones" id="phones"></div>
+ <div class="vign"></div>
+ <div class="brand"><img src="img/logo-cream.png"><span class="sep"></span><span class="num" id="num"></span></div>
+ <div class="topic" id="topic"></div>
+ <div class="title" id="title"><span class="l1" id="l1"></span><br><span class="l2" id="l2"></span></div>
+ <div class="ar" id="ar"></div>
+ <div class="bar" id="bar"></div>
+ <div class="foot">VIDEO EDITING / MOTION DESIGN</div>
+ <div class="site">MAWARDY.SPACE</div>
+</div>
+<script>
+const q=JSON.parse(decodeURIComponent(location.hash.slice(1)));
+document.getElementById('num').textContent=q.num;
+document.getElementById('topic').textContent=q.topic;
+const l1=document.getElementById('l1'),l2=document.getElementById('l2');
+l1.textContent=q.l1; l2.textContent=q.l2||'';
+// fit font sizes to width
+function fit(el,max){let s=max;el.style.fontSize=s+'px';while(el.getBoundingClientRect().width>660&&s>60){s-=4;el.style.fontSize=s+'px'}return s}
+const s1=fit(l1,q.size||160), s2=q.l2?fit(l2,q.size||160):0;
+const tb=document.getElementById('title').getBoundingClientRect();
+const ar=document.getElementById('ar'); ar.textContent=q.ar; ar.style.top=(tb.bottom+30)+'px';
+document.getElementById('bar').style.top=(tb.bottom+30+ar.offsetHeight+34)+'px';
+// streaks (seeded)
+let seed=q.seed||7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+const st=document.getElementById('streaks');
+for(let i=0;i<26;i++){const e=document.createElement('i');const w=200+rnd()*520;e.style.width=w+'px';
+ const ang=(rnd()<.5?-1:1)*(8+rnd()*30);const x=760+rnd()*900,y=rnd()*1264;e.style.left=(x-w/2)+'px';e.style.top=y+'px';
+ e.style.transform=`rotate(${ang}deg)`;e.style.opacity=(.18+rnd()*.5).toFixed(2);e.style.height=(3+rnd()*9)+'px';st.append(e)}
+// phones
+const P=document.getElementById('phones');const imgs=q.imgs;
+const layouts={1:[{x:220,y:60,w:420,r:3,z:3}],
+ 2:[{x:40,y:110,w:360,r:-6,z:2},{x:330,y:20,w:420,r:4,z:3}],
+ 3:[{x:0,y:150,w:320,r:-8,z:1},{x:430,y:150,w:320,r:8,z:1},{x:190,y:20,w:400,r:0,z:3}]};
+const L=layouts[Math.min(imgs.length,3)];
+imgs.slice(0,3).forEach((src,i)=>{const o=L[i];const d=document.createElement('div');d.className='ph';d.style.setProperty('--w',o.w+'px');
+ d.style.left=o.x+'px';d.style.top=o.y+'px';d.style.transform=`rotate(${o.r}deg)`;d.style.zIndex=o.z;
+ d.innerHTML=`<div class="scr"><div class="notch"></div><img src="img/${src}">${o.z===3?'<div class="play"></div>':''}</div>`;P.append(d)});
+if(q.count){const c=document.createElement('div');c.className='count';c.textContent=q.count;document.getElementById('c').append(c)}
+document.fonts.ready.then(()=>{fit(l1,q.size||160);if(q.l2)fit(l2,q.size||160);
+ const tb=document.getElementById('title').getBoundingClientRect();ar.style.top=(tb.bottom+30)+'px';
+ document.getElementById('bar').style.top=(tb.bottom+30+ar.offsetHeight+34)+'px';document.body.dataset.ready=1});
+</script></body></html>

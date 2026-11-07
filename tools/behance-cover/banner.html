@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800&family=Anton&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:3200px;height:600px;overflow:hidden}
+.b{position:relative;width:3200px;height:600px;overflow:hidden;color:#F8D4B1;font-family:Montserrat;
+ background:radial-gradient(60% 140% at 50% 50%,#8a1530 0%,#5E0B20 40%,#3D0713 75%,#22030a 100%)}
+.streaks i{position:absolute;border-radius:8px;filter:blur(8px);background:linear-gradient(90deg,transparent,rgba(255,215,200,.9),transparent)}
+.center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:56px;white-space:nowrap}
+.center img{height:120px}
+.sep{width:3px;height:120px;background:rgba(248,212,177,.3)}
+.words{display:flex;flex-direction:column;gap:10px}
+.words .en{font:92px Anton;letter-spacing:.03em;text-transform:uppercase;line-height:1}
+.words .en b{font-weight:400;color:#e9a6ae}
+.words .ar{font:800 34px Alexandria;direction:rtl;text-align:left;opacity:.85}
+.url{position:absolute;right:120px;bottom:40px;font:600 26px Montserrat;letter-spacing:.24em;opacity:.7}
+</style></head><body><div class="b">
+<div class="streaks" id="s"></div>
+<div class="center"><img src="img/logo-cream.png"><span class="sep"></span>
+ <div class="words"><div class="en">Video <b>·</b> Motion <b>·</b> Development</div><div class="ar">مونتاج · موشن جرافيك · برمجة</div></div></div>
+</div>
+<script>
+let seed=21;const r=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};const s=document.getElementById('s');
+for(let i=0;i<60;i++){const e=document.createElement('i');const w=250+r()*700;const left=r()<.5? r()*900 : 2300+r()*900;
+ e.style.cssText=`width:${w}px;height:${3+r()*10}px;left:${left-w/2}px;top:${r()*600}px;opacity:${(.15+r()*.55).toFixed(2)};transform:rotate(${(left<1600?1:-1)*(r()*14)}deg)`;s.append(e)}
+document.fonts.ready.then(()=>document.body.dataset.ready=1);
+</script></body></html>
