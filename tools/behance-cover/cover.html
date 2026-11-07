@@ -12,21 +12,21 @@ html,body{width:1616px;height:1264px;overflow:hidden;background:var(--ink)}
 .streaks i{position:absolute;height:6px;border-radius:6px;filter:blur(7px);opacity:.55;
  background:linear-gradient(90deg,transparent,rgba(255,215,200,.9),transparent);transform-origin:center}
 .vign{position:absolute;inset:0;background:linear-gradient(90deg,rgba(34,3,10,.92) 0%,rgba(34,3,10,.6) 38%,rgba(34,3,10,0) 62%)}
-.brand{position:absolute;left:96px;top:92px;display:flex;align-items:center;gap:28px}
-.brand img{height:64px}
+.brand{position:absolute;left:96px;top:215px;display:flex;align-items:center;gap:28px}
+.brand img{height:56px}
 .brand .sep{width:2px;height:44px;background:var(--line)}
 .brand .num{font:600 30px Montserrat;letter-spacing:.12em;color:var(--dim)}
-.topic{position:absolute;left:96px;top:330px;font:600 24px Montserrat;letter-spacing:.32em;color:var(--dim);text-transform:uppercase}
-.title{position:absolute;left:92px;top:390px;width:760px;font-family:Anton,sans-serif;text-transform:uppercase;line-height:.98;letter-spacing:.01em}
+.topic{position:absolute;left:96px;top:320px;font:600 24px Montserrat;letter-spacing:.32em;color:var(--dim);text-transform:uppercase}
+.title{position:absolute;left:92px;top:370px;width:760px;font-family:Anton,sans-serif;text-transform:uppercase;line-height:.98;letter-spacing:.01em}
 .title .l1,.title .l2{white-space:nowrap}
 .title .l1{display:inline-block;font-size:var(--s1,150px);color:var(--cream)}
 .title .l2{display:inline-block;font-size:var(--s2,150px);color:#e9a6ae}
 .ar{position:absolute;left:96px;width:760px;font:800 52px Alexandria,sans-serif;direction:rtl;text-align:left;color:var(--cream);opacity:.92}
 .bar{position:absolute;left:96px;width:110px;height:8px;border-radius:8px;background:#E8873A}
-.foot{position:absolute;left:96px;bottom:92px;font:600 22px Montserrat;letter-spacing:.24em;color:var(--dim)}
-.site{position:absolute;right:96px;bottom:92px;font:600 22px Montserrat;letter-spacing:.2em;color:var(--dim)}
+.foot{display:none;position:absolute;left:96px;bottom:92px;font:600 22px Montserrat;letter-spacing:.24em;color:var(--dim)}
+.site{display:none;position:absolute;right:96px;bottom:92px;font:600 22px Montserrat;letter-spacing:.2em;color:var(--dim)}
 /* phones */
-.phones{position:absolute;right:70px;top:190px;width:760px;height:1000px}
+.phones{position:absolute;right:70px;top:170px;width:760px;height:1000px}
 .ph{position:absolute;width:var(--w,400px);aspect-ratio:9/16;border-radius:48px;padding:12px;background:linear-gradient(160deg,#f3c9b5,#9b4a55 40%,#2a0610);
  box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px rgba(255,220,200,.25) inset}
 .ph .scr{width:100%;height:100%;border-radius:38px;overflow:hidden;position:relative;background:#111}
@@ -68,9 +68,9 @@ for(let i=0;i<26;i++){const e=document.createElement('i');const w=200+rnd()*520;
  e.style.transform=`rotate(${ang}deg)`;e.style.opacity=(.18+rnd()*.5).toFixed(2);e.style.height=(3+rnd()*9)+'px';st.append(e)}
 // phones
 const P=document.getElementById('phones');const imgs=q.imgs;
-const layouts={1:[{x:220,y:60,w:420,r:3,z:3}],
- 2:[{x:40,y:110,w:360,r:-6,z:2},{x:330,y:20,w:420,r:4,z:3}],
- 3:[{x:0,y:150,w:320,r:-8,z:1},{x:430,y:150,w:320,r:8,z:1},{x:190,y:20,w:400,r:0,z:3}]};
+const layouts={1:[{x:250,y:20,w:400,r:3,z:3}],
+ 2:[{x:60,y:80,w:350,r:-6,z:2},{x:340,y:10,w:400,r:4,z:3}],
+ 3:[{x:10,y:110,w:300,r:-8,z:1},{x:440,y:110,w:300,r:8,z:1},{x:190,y:10,w:390,r:0,z:3}]};
 const L=layouts[Math.min(imgs.length,3)];
 imgs.slice(0,3).forEach((src,i)=>{const o=L[i];const d=document.createElement('div');d.className='ph';d.style.setProperty('--w',o.w+'px');
  d.style.left=o.x+'px';d.style.top=o.y+'px';d.style.transform=`rotate(${o.r}deg)`;d.style.zIndex=o.z;
