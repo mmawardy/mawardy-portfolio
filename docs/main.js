@@ -5,6 +5,11 @@
   const animate = hasGsap && !prefersReducedMotion;
   if (hasGsap) gsap.registerPlugin(ScrollTrigger);
 
+  const VIDEO_COUNT = SITE.videoGroups.reduce((sum, group) => sum + group.items.length, 0);
+  const GROUP_COUNT = SITE.videoGroups.length;
+  const videoStat = SITE.stats.find(stat => stat.label.en === "videos in this portfolio");
+  if (videoStat) videoStat.value = VIDEO_COUNT;
+
   const STRINGS = {
     ar: {
       topRole: "مونتاج · موشن جرافيك · تطوير رقمي",
@@ -21,7 +26,7 @@
       about1: "أجمع بين المونتاج والموشن جرافيك والبرمجة، لأقدّم المشروع كاملًا من الفكرة إلى النتيجة.",
       about2: "أنشر الألعاب والتطبيقات عبر MAWARDY Studio على Google Play، ومنها لعبة تجاوزت 100 ألف تنزيل. طوّرت مواقع لأطباء ومصممين، وأنتجت إعلانات وريلز لقطاعات العقارات والصحة والأغذية والرياضة والسفر والتسويق، لتحصل على الإعلان والمنتج الرقمي من مصدر واحد.",
       videoKicker: "01 / القسم الأول", videoTitle: "مونتاج الفيديو",
-      videoSub: "55 فيديو في 11 مجموعة، تشمل الحملات والإعلانات والريلز. اختر مجموعة لمشاهدة الأعمال.",
+      videoSub: `${VIDEO_COUNT} فيديو في ${GROUP_COUNT} مجموعة، تشمل الحملات والإعلانات والريلز. اختر مجموعة لمشاهدة الأعمال.`,
       webKicker: "02 / القسم الثاني", webTitle: "برمجة المواقع",
       webSub: "مواقع منشورة لأطباء ومصممين ومنصات رقمية. اضغط على أي موقع لزيارته.",
       appsKicker: "03 / القسم الثالث", appsTitle: "تطبيقات وألعاب",
@@ -50,7 +55,7 @@
       about1: "I bring video editing, motion graphics and software development together to deliver complete projects, from concept to launch.",
       about2: "Through MAWARDY Studio, I publish apps and games on Google Play, including a game with more than 100,000 downloads. I have built websites for doctors and designers, and produced ads and reels for real estate, healthcare, food, sports, travel and marketing, so you get the campaign and the digital product from one source.",
       videoKicker: "01 / FIRST SECTION", videoTitle: "Video Editing",
-      videoSub: "55 videos across 11 collections of campaigns, ads and reels. Choose a collection to watch.",
+      videoSub: `${VIDEO_COUNT} videos across ${GROUP_COUNT} collections of campaigns, ads and reels. Choose a collection to watch.`,
       webKicker: "02 / SECOND SECTION", webTitle: "Web Development",
       webSub: "Published websites for doctors, designers and digital platforms. Select a site to visit.",
       appsKicker: "03 / THIRD SECTION", appsTitle: "Apps & Games",

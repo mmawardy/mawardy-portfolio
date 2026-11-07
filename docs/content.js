@@ -29,7 +29,7 @@ window.SITE = {
     { value: 2400, suffix: "+", label: { ar: "تقييم من المستخدمين", en: "user ratings" } },
     { value: 3, suffix: "", label: { ar: "تطبيقات وألعاب منشورة", en: "published apps and games" } },
     { value: 4, suffix: "", label: { ar: "مواقع منشورة", en: "published websites" } },
-    { value: 55, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
+    { value: 57, suffix: "", label: { ar: "فيديو في البورتفوليو", en: "videos in this portfolio" } },
     { value: 8, suffix: "", label: { ar: "قطاعات من العقارات للطب", en: "industries, from real estate to healthcare" } },
   ],
 
@@ -120,6 +120,14 @@ window.SITE = {
         { title: { ar: "إطلاق تطبيق مواردي", en: "Mawardy App Launch" }, topic: "MOTION", video: `${VIDEO_BASE}MAWARDY-Ad-Motion-v5.mp4`, poster: "assets/posters/mawardy-app.jpg" },
         { title: { ar: "السوق كله في مكان واحد", en: "The Whole Market, One Place" }, topic: "PROMO", video: `${VIDEO_BASE}MAWARDY-Ad-v8.mp4`, poster: "assets/posters/mawardy-asking.jpg" },
         { title: { ar: "السعر قدامك", en: "Clear Prices, Upfront" }, topic: "AD", video: `${VIDEO_BASE}MAWARDY-Ad-Price-Hook-VO.mp4`, poster: "assets/posters/mawardy-price.jpg" },
+      ],
+    },
+    {
+      title: { ar: "أدوات وتقنية", en: "Tech & Tools" },
+      desc: { ar: "ريلز قصيرة بهوية مواردي عن أدوات بتوفر وقتك وفلوسك.", en: "Short Mawardy-branded reels on tools that save you time and money." },
+      items: [
+        { title: { ar: "أداة الرد التلقائي المجانية", en: "Free Auto-DM Tool" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-autodm.mp4`, poster: "assets/posters/mawardy-autodm.jpg" },
+        { title: { ar: "ادفع اشتراكك من غير كريديت كارد", en: "Pay For AI Without A Credit Card" }, topic: "FINTECH", video: `${VIDEO_BASE}mawardy-redotpay.mp4`, poster: "assets/posters/mawardy-redotpay.jpg" },
       ],
     },
     {
