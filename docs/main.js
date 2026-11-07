@@ -342,12 +342,54 @@
     $("#langBtn").textContent = t("lang");
   };
 
+  // One shared tile of TV snow; the screens shift it around so it never looks still.
+  const makeSnowTile = () => {
+    const size = 150;
+    const canvas = document.createElement("canvas");
+    canvas.width = size;
+    canvas.height = size;
+    const context = canvas.getContext("2d");
+    const pixels = context.createImageData(size, size);
+    for (let index = 0; index < pixels.data.length; index += 4) {
+      const shade = 150 + Math.random() * 105;
+      pixels.data.set([shade, shade, shade, Math.random() * 255], index);
+    }
+    context.putImageData(pixels, 0, 0);
+    document.documentElement.style.setProperty("--tv-snow", `url(${canvas.toDataURL()})`);
+  };
+
+  const buildTvScreen = ({ src, box }, index) => {
+    const [left, top, width, height] = box;
+    const screen = el("div", "tv-screen");
+    Object.assign(screen.style, { left: `${left}%`, top: `${top}%`, width: `${width}%`, height: `${height}%` });
+    screen.style.setProperty("--screen", `url("${src}")`);
+    screen.style.setProperty("--flicker", `${5.2 + index * 1.3}s`);
+    screen.style.setProperty("--roll", `${4.4 + index * 0.9}s`);
+    const picture = image(src);
+    picture.classList.add("tv-picture");
+    picture.loading = "eager";
+    const signal = el("div", "tv-signal");
+    signal.append(picture, el("span", "tv-noise"), el("span", "tv-roll"));
+    const power = el("div", "tv-power");
+    power.append(signal);
+    screen.append(power, el("span", "tv-flash"));
+    return screen;
+  };
+
   const renderPortrait = () => {
     const photo = image(SITE.photo || "assets/img/mark-sand.png", t("name"));
     photo.classList.add("portrait-photo");
-    if (!SITE.photo) photo.classList.add("is-mark");
     photo.loading = "eager";
-    $("#portrait").replaceChildren(photo);
+    if (!SITE.photo) {
+      photo.classList.add("is-mark");
+      $("#portrait").replaceChildren(photo);
+      return;
+    }
+    const stage = el("div", "tv-stage");
+    const screens = (SITE.tvScreens || []).map(buildTvScreen);
+    if (screens.length) makeSnowTile();
+    stage.append(photo, ...screens);
+    $("#portrait").replaceChildren(stage);
   };
 
   const renderHeroWall = () => {
@@ -652,7 +694,7 @@
 
   // Keeps the hero alive after the entrance: the figure floats while the glow breathes.
   const startHeroIdleMotion = () => {
-    gsap.to(".portrait-photo", { y: -12, rotation: 0.7, duration: 2.8, ease: "sine.inOut", repeat: -1, yoyo: true });
+    gsap.to(".tv-stage", { y: -12, rotation: 0.7, duration: 2.8, ease: "sine.inOut", repeat: -1, yoyo: true });
     gsap.to(".hero-glow", { scale: 1.12, opacity: 0.8, duration: 3.4, ease: "sine.inOut", repeat: -1, yoyo: true });
   };
 
@@ -666,6 +708,24 @@
         gsap.to(canvas, { autoAlpha: 0, duration: 0.35, onComplete: () => canvas.remove() });
       },
     }).catch(revealLogo);
+  };
+
+  // Each TV powers on like an old tube: a bright line opens up into the picture.
+  const powerOnTv = (screen) => {
+    const flash = screen.querySelector(".tv-flash");
+    const power = screen.querySelector(".tv-power");
+    return gsap.timeline()
+      .set(flash, { autoAlpha: 1, scaleX: 0, scaleY: 1 })
+      .to(flash, { scaleX: 1, duration: 0.14, ease: "power2.out" })
+      .set(power, { autoAlpha: 1, scaleY: 0.02, filter: "brightness(3)" })
+      .to(power, { scaleY: 1, duration: 0.36, ease: "power3.out" })
+      .to(power, { filter: "brightness(1)", duration: 0.6, ease: "power2.out", clearProps: "filter" }, "<")
+      .to(flash, { autoAlpha: 0, scaleY: 6, duration: 0.3, ease: "power2.out" }, "<");
+  };
+
+  const addTvPowerOn = (timeline, start) => {
+    gsap.set(".tv-power", { autoAlpha: 0 });
+    $$(".tv-screen").forEach((screen, index) => timeline.add(powerOnTv(screen), start + index * 0.2));
   };
 
   // The timeline is built while the loader still covers the page, so every element starts hidden.
@@ -689,6 +749,7 @@
       .from(".hero-actions .btn", { y: 26, autoAlpha: 0, duration: 0.7, ease: "power3.out", stagger: 0.12 }, 1.75)
       .from(".hero-facts li", { x: lang === "ar" ? -40 : 40, autoAlpha: 0, duration: 0.8, ease: "power3.out", stagger: 0.14 }, 1.4)
       .from(".dock", { y: 90, autoAlpha: 0, duration: 0.8, ease: "power3.out", clearProps: "transform,opacity,visibility" }, 2);
+    addTvPowerOn(timeline, 1.75);
     timeline.add(startHeroIdleMotion, 2.2);
     factNumbers.forEach((node, index) => {
       timeline.to(counters[index], {

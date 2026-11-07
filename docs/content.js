@@ -4,7 +4,15 @@ const VIDEO_BASE = "https://raw.githubusercontent.com/mmawardy/mawardy-portfolio
 
 window.SITE = {
   // Portrait path, e.g. "assets/img/mohamed.png". Empty shows the logo mark.
-  photo: "assets/img/mawardy-hero-sand.webp",
+  photo: "assets/img/hero-tv.webp",
+
+  // Lit TV screens laid over the photo: image plus left, top, width, height as % of the photo.
+  tvScreens: [
+    { name: "top", src: "assets/img/tv-top.webp", box: [34.45, 60.606, 25.678, 16.507] },
+    { name: "left", src: "assets/img/tv-left.webp", box: [2.632, 75.04, 20.096, 17.145] },
+    { name: "bottom", src: "assets/img/tv-bottom.webp", box: [34.928, 79.585, 25.997, 16.108] },
+    { name: "right", src: "assets/img/tv-right.webp", box: [75.997, 75.04, 21.292, 17.065] },
+  ],
 
   // International format without "+", e.g. "201000000000".
   whatsapp: "201065295984",
