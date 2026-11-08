@@ -135,6 +135,8 @@ window.SITE = {
         { title: { ar: "فيديو كامل بالذكاء الاصطناعي", en: "AI Video With Revid" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-revid.mp4`, poster: "assets/posters/mawardy-revid.jpg" },
         { title: { ar: "كابشن متحركة في دقيقة", en: "Auto Captions With Submagic" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-submagic.mp4`, poster: "assets/posters/mawardy-submagic.jpg" },
         { title: { ar: "فيديو طويل يبقى ٣٠ ريل", en: "Vizard AI Clips" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-vizard.mp4`, poster: "assets/posters/mawardy-vizard.jpg" },
+        { title: { ar: "موقع وإيميلات وكورس في مكان واحد", en: "All In One With Systeme.io" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-systeme.mp4`, poster: "assets/posters/mawardy-systeme.jpg" },
+        { title: { ar: "كتابة وتصميم وفيديو من مكان واحد", en: "AI Marketing With Simplified" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-simplified.mp4`, poster: "assets/posters/mawardy-simplified.jpg" },
       ],
     },
     {
