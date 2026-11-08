@@ -128,6 +128,7 @@ window.SITE = {
       items: [
         { title: { ar: "أداة الرد التلقائي المجانية", en: "Free Auto-DM Tool" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-autodm.mp4`, poster: "assets/posters/mawardy-autodm.jpg" },
         { title: { ar: "ادفع اشتراكك من غير كريديت كارد", en: "Pay For AI Without A Credit Card" }, topic: "FINTECH", video: `${VIDEO_BASE}mawardy-redotpay.mp4`, poster: "assets/posters/mawardy-redotpay.jpg" },
+        { title: { ar: "خلّي Claude يكتبلك بوستات لينكد إن", en: "LinkedIn Skills For Claude Code" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-linkedin.mp4`, poster: "assets/posters/mawardy-linkedin.jpg" },
       ],
     },
     {
