@@ -132,6 +132,9 @@ window.SITE = {
         { title: { ar: "صوتك بالذكاء الاصطناعي", en: "AI Voice With ElevenLabs" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-elevenlabs.mp4`, poster: "assets/posters/mawardy-elevenlabs.jpg" },
         { title: { ar: "كل ملفات المونتاج في اشتراك واحد", en: "Envato Elements For Editors" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-envato.mp4`, poster: "assets/posters/mawardy-envato.jpg" },
         { title: { ar: "موقع باسمك في دقايق", en: "Portfolio Website In Minutes" }, topic: "WEB", video: `${VIDEO_BASE}mawardy-hostinger.mp4`, poster: "assets/posters/mawardy-hostinger.jpg" },
+        { title: { ar: "فيديو كامل بالذكاء الاصطناعي", en: "AI Video With Revid" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-revid.mp4`, poster: "assets/posters/mawardy-revid.jpg" },
+        { title: { ar: "كابشن متحركة في دقيقة", en: "Auto Captions With Submagic" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-submagic.mp4`, poster: "assets/posters/mawardy-submagic.jpg" },
+        { title: { ar: "فيديو طويل يبقى ٣٠ ريل", en: "Vizard AI Clips" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-vizard.mp4`, poster: "assets/posters/mawardy-vizard.jpg" },
       ],
     },
     {

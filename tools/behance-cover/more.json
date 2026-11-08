@@ -13,5 +13,8 @@
  {"out":"26-linkedin-skills.jpg","num":"26","topic":"Tools / Reel","l1":"LinkedIn","l2":"Skills","ar":"سكيلز لينكد إن لـ Claude","imgs":["linkedin_1.jpg","linkedin_2.jpg","linkedin_3.jpg"],"seed":41},
  {"out": "27-elevenlabs-voice.jpg", "num": "27", "topic": "AI Tools / Reel", "l1": "AI Voice", "l2": "ElevenLabs", "ar": "صوتك بالذكاء الاصطناعي", "imgs": ["elevenlabs_1.jpg", "elevenlabs_2.jpg", "elevenlabs_3.jpg"], "seed": 43},
  {"out": "28-envato-elements.jpg", "num": "28", "topic": "Tools / Reel", "l1": "Envato", "l2": "Elements", "ar": "ملفات المونتاج كلها", "imgs": ["envato_1.jpg", "envato_3.jpg", "envato_2.jpg"], "seed": 47},
- {"out": "29-hostinger-portfolio.jpg", "num": "29", "topic": "Tools / Reel", "l1": "Portfolio", "l2": "Website", "ar": "موقع باسمك في دقايق", "imgs": ["hostinger_2.jpg", "hostinger_3.jpg", "hostinger_1.jpg"], "seed": 53}
+ {"out": "29-hostinger-portfolio.jpg", "num": "29", "topic": "Tools / Reel", "l1": "Portfolio", "l2": "Website", "ar": "موقع باسمك في دقايق", "imgs": ["hostinger_2.jpg", "hostinger_3.jpg", "hostinger_1.jpg"], "seed": 53},
+ {"out": "30-revid-ai-video.jpg", "num": "30", "topic": "AI Tools / Reel", "l1": "AI Video", "l2": "Revid", "ar": "فيديو كامل بالـ AI", "imgs": ["revid_1.jpg", "revid_3.jpg", "revid_2.jpg"], "seed": 59},
+ {"out": "31-submagic-captions.jpg", "num": "31", "topic": "AI Tools / Reel", "l1": "Auto", "l2": "Captions", "ar": "كابشن متحركة في دقيقة", "imgs": ["submagic_1.jpg", "submagic_3.jpg", "submagic_2.jpg"], "seed": 61},
+ {"out": "32-vizard-clips.jpg", "num": "32", "topic": "AI Tools / Reel", "l1": "Vizard", "l2": "AI Clips", "ar": "فيديو طويل يبقى ٣٠ ريل", "imgs": ["vizard_2.jpg", "vizard_3.jpg", "vizard_1.jpg"], "seed": 67}
 ]
