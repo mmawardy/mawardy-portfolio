@@ -129,6 +129,9 @@ window.SITE = {
         { title: { ar: "أداة الرد التلقائي المجانية", en: "Free Auto-DM Tool" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-autodm.mp4`, poster: "assets/posters/mawardy-autodm.jpg" },
         { title: { ar: "ادفع اشتراكك من غير كريديت كارد", en: "Pay For AI Without A Credit Card" }, topic: "FINTECH", video: `${VIDEO_BASE}mawardy-redotpay.mp4`, poster: "assets/posters/mawardy-redotpay.jpg" },
         { title: { ar: "خلّي Claude يكتبلك بوستات لينكد إن", en: "LinkedIn Skills For Claude Code" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-linkedin.mp4`, poster: "assets/posters/mawardy-linkedin.jpg" },
+        { title: { ar: "صوتك بالذكاء الاصطناعي", en: "AI Voice With ElevenLabs" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-elevenlabs.mp4`, poster: "assets/posters/mawardy-elevenlabs.jpg" },
+        { title: { ar: "كل ملفات المونتاج في اشتراك واحد", en: "Envato Elements For Editors" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-envato.mp4`, poster: "assets/posters/mawardy-envato.jpg" },
+        { title: { ar: "موقع باسمك في دقايق", en: "Portfolio Website In Minutes" }, topic: "WEB", video: `${VIDEO_BASE}mawardy-hostinger.mp4`, poster: "assets/posters/mawardy-hostinger.jpg" },
       ],
     },
     {

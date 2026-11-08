@@ -10,5 +10,8 @@
  {"out":"23-retail-stores.jpg","num":"23","topic":"Retail / Reels","l1":"Retail","l2":"Store Tours","ar":"جولات في المتاجر","imgs":["Ads_2.jpg","Ads_3.jpg","Ads_1.jpg"],"seed":39},
  {"out":"24-property-investment.jpg","num":"24","topic":"Real Estate / Reels","l1":"Property","l2":"Investment","ar":"دليل الاستثمار العقاري","imgs":["Iraq_1.jpg","Iraq_3.jpg","Iraq_2.jpg"],"seed":40},
  {"out":"25-watad-campaign.jpg","num":"25","topic":"Campaign / Promo","l1":"Al-Watad","l2":"Campaign","ar":"حملة الوتد الجامعية","imgs":["Mag_1.jpg"],"seed":41},
- {"out":"26-linkedin-skills.jpg","num":"26","topic":"Tools / Reel","l1":"LinkedIn","l2":"Skills","ar":"سكيلز لينكد إن لـ Claude","imgs":["linkedin_1.jpg","linkedin_2.jpg","linkedin_3.jpg"],"seed":41}
+ {"out":"26-linkedin-skills.jpg","num":"26","topic":"Tools / Reel","l1":"LinkedIn","l2":"Skills","ar":"سكيلز لينكد إن لـ Claude","imgs":["linkedin_1.jpg","linkedin_2.jpg","linkedin_3.jpg"],"seed":41},
+ {"out": "27-elevenlabs-voice.jpg", "num": "27", "topic": "AI Tools / Reel", "l1": "AI Voice", "l2": "ElevenLabs", "ar": "صوتك بالذكاء الاصطناعي", "imgs": ["elevenlabs_1.jpg", "elevenlabs_2.jpg", "elevenlabs_3.jpg"], "seed": 43},
+ {"out": "28-envato-elements.jpg", "num": "28", "topic": "Tools / Reel", "l1": "Envato", "l2": "Elements", "ar": "ملفات المونتاج كلها", "imgs": ["envato_1.jpg", "envato_3.jpg", "envato_2.jpg"], "seed": 47},
+ {"out": "29-hostinger-portfolio.jpg", "num": "29", "topic": "Tools / Reel", "l1": "Portfolio", "l2": "Website", "ar": "موقع باسمك في دقايق", "imgs": ["hostinger_2.jpg", "hostinger_3.jpg", "hostinger_1.jpg"], "seed": 53}
 ]
