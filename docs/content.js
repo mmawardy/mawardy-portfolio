@@ -137,6 +137,7 @@ window.SITE = {
         { title: { ar: "فيديو طويل يبقى ٣٠ ريل", en: "Vizard AI Clips" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-vizard.mp4`, poster: "assets/posters/mawardy-vizard.jpg" },
         { title: { ar: "موقع وإيميلات وكورس في مكان واحد", en: "All In One With Systeme.io" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-systeme.mp4`, poster: "assets/posters/mawardy-systeme.jpg" },
         { title: { ar: "كتابة وتصميم وفيديو من مكان واحد", en: "AI Marketing With Simplified" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-simplified.mp4`, poster: "assets/posters/mawardy-simplified.jpg" },
+        { title: { ar: "السكريبت يبقى فيديو", en: "Text To Video With Fliki" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-fliki.mp4`, poster: "assets/posters/mawardy-fliki.jpg" },
       ],
     },
     {

@@ -18,5 +18,6 @@
  {"out": "31-submagic-captions.jpg", "num": "31", "topic": "AI Tools / Reel", "l1": "Auto", "l2": "Captions", "ar": "كابشن متحركة في دقيقة", "imgs": ["submagic_1.jpg", "submagic_3.jpg", "submagic_2.jpg"], "seed": 61},
  {"out": "32-vizard-clips.jpg", "num": "32", "topic": "AI Tools / Reel", "l1": "Vizard", "l2": "AI Clips", "ar": "فيديو طويل يبقى ٣٠ ريل", "imgs": ["vizard_2.jpg", "vizard_3.jpg", "vizard_1.jpg"], "seed": 67},
  {"out": "33-systeme-all-in-one.jpg", "num": "33", "topic": "Tools / Reel", "l1": "Systeme.io", "l2": "All In One", "ar": "موقع وإيميلات وكورس في مكان واحد", "imgs": ["systeme_2.jpg", "systeme_1.jpg", "systeme_3.jpg"], "seed": 71},
- {"out": "34-simplified-marketing.jpg", "num": "34", "topic": "AI Tools / Reel", "l1": "Simplified", "l2": "AI Marketing", "ar": "كتابة وتصميم وفيديو من مكان واحد", "imgs": ["simplified_2.jpg", "simplified_1.jpg", "simplified_3.jpg"], "seed": 73}
+ {"out": "34-simplified-marketing.jpg", "num": "34", "topic": "AI Tools / Reel", "l1": "Simplified", "l2": "AI Marketing", "ar": "كتابة وتصميم وفيديو من مكان واحد", "imgs": ["simplified_2.jpg", "simplified_1.jpg", "simplified_3.jpg"], "seed": 73},
+ {"out": "35-fliki-text-to-video.jpg", "num": "35", "topic": "AI Tools / Reel", "l1": "Text To Video", "l2": "Fliki", "ar": "السكريبت يبقى فيديو", "imgs": ["fliki_2.jpg", "fliki_1.jpg", "fliki_3.jpg"], "seed": 79}
 ]
