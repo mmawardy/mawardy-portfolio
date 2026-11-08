@@ -138,6 +138,9 @@ window.SITE = {
         { title: { ar: "موقع وإيميلات وكورس في مكان واحد", en: "All In One With Systeme.io" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-systeme.mp4`, poster: "assets/posters/mawardy-systeme.jpg" },
         { title: { ar: "كتابة وتصميم وفيديو من مكان واحد", en: "AI Marketing With Simplified" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-simplified.mp4`, poster: "assets/posters/mawardy-simplified.jpg" },
         { title: { ar: "السكريبت يبقى فيديو", en: "Text To Video With Fliki" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-fliki.mp4`, poster: "assets/posters/mawardy-fliki.jpg" },
+        { title: { ar: "فيديوهاتك مش بتتشاف؟", en: "YouTube Growth With vidIQ" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-vidiq.mp4`, poster: "assets/posters/mawardy-vidiq.jpg" },
+        { title: { ar: "جدول بوستاتك وتابع أرقامك", en: "Scheduling With Metricool" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-metricool.mp4`, poster: "assets/posters/mawardy-metricool.jpg" },
+        { title: { ar: "الشغل المتكرر يتعمل لوحده", en: "Automation With Make" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-make.mp4`, poster: "assets/posters/mawardy-make.jpg" },
       ],
     },
     {

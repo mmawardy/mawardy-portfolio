@@ -19,5 +19,8 @@
  {"out": "32-vizard-clips.jpg", "num": "32", "topic": "AI Tools / Reel", "l1": "Vizard", "l2": "AI Clips", "ar": "فيديو طويل يبقى ٣٠ ريل", "imgs": ["vizard_2.jpg", "vizard_3.jpg", "vizard_1.jpg"], "seed": 67},
  {"out": "33-systeme-all-in-one.jpg", "num": "33", "topic": "Tools / Reel", "l1": "Systeme.io", "l2": "All In One", "ar": "موقع وإيميلات وكورس في مكان واحد", "imgs": ["systeme_2.jpg", "systeme_1.jpg", "systeme_3.jpg"], "seed": 71},
  {"out": "34-simplified-marketing.jpg", "num": "34", "topic": "AI Tools / Reel", "l1": "Simplified", "l2": "AI Marketing", "ar": "كتابة وتصميم وفيديو من مكان واحد", "imgs": ["simplified_2.jpg", "simplified_1.jpg", "simplified_3.jpg"], "seed": 73},
- {"out": "35-fliki-text-to-video.jpg", "num": "35", "topic": "AI Tools / Reel", "l1": "Text To Video", "l2": "Fliki", "ar": "السكريبت يبقى فيديو", "imgs": ["fliki_2.jpg", "fliki_1.jpg", "fliki_3.jpg"], "seed": 79}
+ {"out": "35-fliki-text-to-video.jpg", "num": "35", "topic": "AI Tools / Reel", "l1": "Text To Video", "l2": "Fliki", "ar": "السكريبت يبقى فيديو", "imgs": ["fliki_2.jpg", "fliki_1.jpg", "fliki_3.jpg"], "seed": 79},
+ {"out": "36-vidiq-youtube.jpg", "num": "36", "topic": "AI Tools / Reel", "l1": "YouTube", "l2": "With vidIQ", "ar": "فيديوهاتك مش بتتشاف؟", "imgs": ["vidiq_2.jpg", "vidiq_1.jpg", "vidiq_3.jpg"], "seed": 83},
+ {"out": "37-metricool-scheduling.jpg", "num": "37", "topic": "Tools / Reel", "l1": "Metricool", "l2": "Scheduling", "ar": "جدول وتابع أرقامك", "imgs": ["metricool_2.jpg", "metricool_1.jpg", "metricool_3.jpg"], "seed": 89},
+ {"out": "38-make-automation.jpg", "num": "38", "topic": "Tools / Reel", "l1": "Automation", "l2": "With Make", "ar": "الشغل يتعمل لوحده", "imgs": ["make_2.jpg", "make_1.jpg", "make_3.jpg"], "seed": 97}
 ]
