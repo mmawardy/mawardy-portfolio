@@ -144,6 +144,9 @@ window.SITE = {
         { title: { ar: "ريلز من فيديو طويل", en: "AI Clips With OpusClip" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-opusclip.mp4`, poster: "assets/posters/mawardy-opusclip.jpg" },
         { title: { ar: "قايمة إيميلات بتاعتك إنت", en: "Email List With Kit" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-kit.mp4`, poster: "assets/posters/mawardy-kit.jpg" },
         { title: { ar: "عرض تقديمي من جملة واحدة", en: "AI Decks With Gamma" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-gamma.mp4`, poster: "assets/posters/mawardy-gamma.jpg" },
+        { title: { ar: "اكتب كلمة واللينك يوصل لوحده", en: "Auto DMs With ManyChat" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-manychat.mp4`, poster: "assets/posters/mawardy-manychat.jpg" },
+        { title: { ar: "موقع باللي في دماغك من غير كود", en: "No Code Sites With Webflow" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-webflow.mp4`, poster: "assets/posters/mawardy-webflow.jpg" },
+        { title: { ar: "تصاميم إعلانك في ثواني", en: "AI Ad Design With AdCreative.ai" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-adcreative.mp4`, poster: "assets/posters/mawardy-adcreative.jpg" },
       ],
     },
     {
