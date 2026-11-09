@@ -141,6 +141,9 @@ window.SITE = {
         { title: { ar: "فيديوهاتك مش بتتشاف؟", en: "YouTube Growth With vidIQ" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-vidiq.mp4`, poster: "assets/posters/mawardy-vidiq.jpg" },
         { title: { ar: "جدول بوستاتك وتابع أرقامك", en: "Scheduling With Metricool" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-metricool.mp4`, poster: "assets/posters/mawardy-metricool.jpg" },
         { title: { ar: "الشغل المتكرر يتعمل لوحده", en: "Automation With Make" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-make.mp4`, poster: "assets/posters/mawardy-make.jpg" },
+        { title: { ar: "ريلز من فيديو طويل", en: "AI Clips With OpusClip" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-opusclip.mp4`, poster: "assets/posters/mawardy-opusclip.jpg" },
+        { title: { ar: "قايمة إيميلات بتاعتك إنت", en: "Email List With Kit" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-kit.mp4`, poster: "assets/posters/mawardy-kit.jpg" },
+        { title: { ar: "عرض تقديمي من جملة واحدة", en: "AI Decks With Gamma" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-gamma.mp4`, poster: "assets/posters/mawardy-gamma.jpg" },
       ],
     },
     {
