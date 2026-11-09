@@ -26,7 +26,7 @@
  {"out": "39-opusclip-clips.jpg", "num": "39", "topic": "AI Tools / Reel", "l1": "AI Clips", "l2": "With OpusClip", "ar": "ريلز من فيديو طويل", "imgs": ["opusclip_2.jpg", "opusclip_1.jpg", "opusclip_3.jpg"], "seed": 101},
  {"out": "40-kit-email.jpg", "num": "40", "topic": "Tools / Reel", "l1": "Email List", "l2": "With Kit", "ar": "قايمة بتاعتك إنت", "imgs": ["kit_2.jpg", "kit_1.jpg", "kit_3.jpg"], "seed": 107},
  {"out": "41-gamma-decks.jpg", "num": "41", "topic": "AI Tools / Reel", "l1": "AI Decks", "l2": "With Gamma", "ar": "عرض من جملة واحدة", "imgs": ["gamma_2.jpg", "gamma_1.jpg", "gamma_3.jpg"], "seed": 109},
- {"out": "42-manychat-autodm.jpg", "num": "42", "topic": "Tools / Reel", "l1": "Auto DMs", "l2": "With ManyChat", "ar": "اكتب كلمة واللينك يوصل", "imgs": ["manychat_2.jpg", "manychat_1.jpg", "manychat_3.jpg"], "seed": 113},
- {"out": "43-webflow-sites.jpg", "num": "43", "topic": "Web / Reel", "l1": "No Code Sites", "l2": "With Webflow", "ar": "موقع من غير كود", "imgs": ["webflow_2.jpg", "webflow_1.jpg", "webflow_3.jpg"], "seed": 127},
- {"out": "44-adcreative-ads.jpg", "num": "44", "topic": "AI Tools / Reel", "l1": "AI Ad Design", "l2": "AdCreative.ai", "ar": "تصاميم إعلانك في ثواني", "imgs": ["adcreative_2.jpg", "adcreative_1.jpg", "adcreative_3.jpg"], "seed": 131}
+ {"out": "42-manychat-autodm.jpg", "num": "42", "topic": "Tools / Reel", "l1": "Auto DMs", "l2": "With ManyChat", "ar": "اكتب كلمة واللينك يوصل", "imgs": ["manychat_2.jpg", "manychat_3.jpg", "manychat_1.jpg"], "seed": 113},
+ {"out": "43-webflow-sites.jpg", "num": "43", "topic": "Web / Reel", "l1": "No Code Sites", "l2": "With Webflow", "ar": "موقع من غير كود", "imgs": ["webflow_2.jpg", "webflow_3.jpg", "webflow_1.jpg"], "seed": 127},
+ {"out": "44-adcreative-ads.jpg", "num": "44", "topic": "AI Tools / Reel", "l1": "AI Ad Design", "l2": "AdCreative.ai", "ar": "تصاميم إعلانك في ثواني", "imgs": ["adcreative_2.jpg", "adcreative_3.jpg", "adcreative_1.jpg"], "seed": 131}
 ]
