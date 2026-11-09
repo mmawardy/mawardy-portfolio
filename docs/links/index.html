@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أدوات موردي</title>
+<meta name="description" content="كل الأدوات اللي اتكلمت عنها في الريلز، في مكان واحد.">
+<meta name="theme-color" content="#5E0B20">
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--burgundy:#5E0B20;--ink:#3D0713;--cream:#F8D4B1;--pink:#E9A6AE}
+*{box-sizing:border-box;margin:0}
+body{background:var(--burgundy);color:var(--cream);font-family:Alexandria,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+main{max-width:480px;margin:0 auto;padding:40px 16px 32px}
+header{text-align:center;margin-bottom:32px}
+.photo{width:112px;height:112px;margin:0 auto 16px;border-radius:50%;background:var(--cream);overflow:hidden}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.logo{display:block;height:44px;width:auto;margin:0 auto 12px}
+.intro{font-size:15px;max-width:32ch;margin:0 auto;text-wrap:balance}
+h2{font-size:13px;font-weight:500;color:var(--pink);margin:28px 4px 10px}
+ul{list-style:none;padding:0;display:grid;gap:10px}
+.tool{display:flex;align-items:center;gap:12px;min-height:68px;padding:10px 14px;border-radius:14px;background:var(--cream);color:var(--ink);text-decoration:none;transition:transform .15s ease,background-color .15s ease}
+.tool:hover{background:#fbe2ca}
+.tool:active{transform:scale(.985)}
+.tool:focus-visible,.social a:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.mark{flex:none;width:44px;height:44px;display:grid;place-items:center;border-radius:10px;background:var(--burgundy);color:var(--cream);font-weight:700;font-size:18px}
+.text{flex:1;min-width:0}
+.name{display:block;font-weight:700;font-size:16px}
+.desc{display:block;font-size:13px;opacity:.82}
+.arrow{flex:none;font-size:18px}
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:36px}
+.social a{padding:8px 14px;border:1px solid rgba(248,212,177,.45);border-radius:999px;color:var(--cream);font-size:13px;text-decoration:none}
+.social a:hover{background:rgba(248,212,177,.12)}
+.note{margin-top:24px;text-align:center;font-size:12px;color:var(--pink)}
+@media (prefers-reduced-motion:reduce){.tool{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="photo"><img src="/assets/img/mohamed-portrait-2.webp" alt="محمد المواردي" width="112" height="112"></div>
+    <img class="logo" src="/assets/img/logo-sand.png" alt="موردي" width="134" height="44">
+    <p class="intro">كل الأدوات اللي اتكلمت عنها في الريلز، في مكان واحد.</p>
+  </header>
+  <div id="tools"></div>
+  <nav class="social" aria-label="حساباتي">
+    <a href="https://www.instagram.com/justmo222" rel="noopener">إنستجرام</a>
+    <a href="https://www.tiktok.com/@mawardy31" rel="noopener">تيك توك</a>
+    <a href="https://www.facebook.com/profile.php?id=61555671271541" rel="noopener">فيسبوك</a>
+    <a href="https://www.behance.net/mohamedalmawar" rel="noopener">بيهانس</a>
+    <a href="https://mawardy.space" rel="noopener">الموقع</a>
+  </nav>
+  <p class="note">اللينكات دي فيها عمولة ليا، من غير أي تكلفة زيادة عليك.</p>
+</main>
+<script>
+/* لتحديث الصفحة: عدّل القايمة دي بس. الأداة اللي لينكها فاضي مش بتظهر. */
+const TOOLS = [
+  {group:"فيديو وصوت", name:"Submagic",   desc:"كابشن متحركة للريلز في دقيقة",        link:"https://www.submagic.co/auto-subtitle-generator?via=mohamed-7eadb8"},
+  {group:"فيديو وصوت", name:"Vizard",     desc:"الفيديو الطويل يتقطع لريلز جاهزة",     link:"https://vizard.ai/?via=mohamed-almawardy"},
+  {group:"فيديو وصوت", name:"Fliki",      desc:"السكريبت يتحول لفيديو من غير تصوير",   link:"https://fliki.ai/?via=mohamed-almawardy"},
+  {group:"فيديو وصوت", name:"Revid",      desc:"فيديو كامل من مجرد فكرة",  link:"https://www.revid.ai/?via=mfmawardy74"},
+  {group:"فيديو وصوت", name:"ElevenLabs", desc:"تعليق صوتي واستنساخ صوتك",            link:"https://try.elevenlabs.io/8sifpm9fgqt8"},
+  {group:"النشر والنمو", name:"vidIQ",      desc:"أفكار وعناوين تكبّر قناتك على يوتيوب", link:"https://vidiq.com/Mawardy"},
+  {group:"النشر والنمو", name:"Metricool",  desc:"جدولة البوستات وأرقام كل حساباتك",     link:"https://i.mtr.cool/mawardy"},
+  {group:"النشر والنمو", name:"Simplified", desc:"محتوى وتصميم وجدولة من مكان واحد",     link:"https://simplified.com?fpr=mohamed-6c59cc"},
+  {group:"البيزنس والأوتوميشن", name:"Make",       desc:"التطبيقات تشتغل مع بعض من غير كود",     link:"https://www.make.com/en/register?pc=mawardy"},
+  {group:"البيزنس والأوتوميشن", name:"Systeme.io", desc:"موقعك وإيميلاتك وكورسك مع بعض",   link:"https://systeme.io/?sa=sa02859287736668fc4f0ca724f25542131edb3afd"},
+  {group:"البيزنس والأوتوميشن", name:"Hostinger",  desc:"موقع باسمك من غير كود",                 link:"https://www.hostinger.com?REFERRALCODE=YG3MFMAWAH2L"},
+];
+const root = document.getElementById("tools");
+const live = TOOLS.filter(t => t.link);
+[...new Set(live.map(t => t.group))].forEach(group => {
+  const h = document.createElement("h2");
+  h.textContent = group;
+  const ul = document.createElement("ul");
+  live.filter(t => t.group === group).forEach(t => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.className = "tool"; a.href = t.link; a.rel = "sponsored noopener";
+    const mark = document.createElement("span");
+    mark.className = "mark"; mark.textContent = t.name[0]; mark.setAttribute("aria-hidden", "true");
+    const text = document.createElement("span");
+    text.className = "text";
+    const name = document.createElement("bdi");
+    name.className = "name"; name.textContent = t.name;
+    const desc = document.createElement("span");
+    desc.className = "desc"; desc.textContent = t.desc;
+    text.append(name, desc);
+    const arrow = document.createElement("span");
+    arrow.className = "arrow"; arrow.textContent = "←"; arrow.setAttribute("aria-hidden", "true");
+    a.append(mark, text, arrow);
+    li.append(a); ul.append(li);
+  });
+  root.append(h, ul);
+});
+</script>
+</body>
+</html>
