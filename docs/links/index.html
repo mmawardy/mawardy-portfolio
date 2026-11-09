@@ -58,8 +58,9 @@ ul{list-style:none;padding:0;display:grid;gap:10px}
 <script>
 /* لتحديث الصفحة: عدّل القايمة دي بس. الأداة اللي لينكها فاضي مش بتظهر. */
 const TOOLS = [
+  {group:"فيديو وصوت", name:"OpusClip",   desc:"فيديو طويل يطلع منه ريلز جاهزة",  link:"https://opus.pro/?via=mohamedfp"},
   {group:"فيديو وصوت", name:"Submagic",   desc:"كابشن متحركة للريلز في دقيقة",        link:"https://www.submagic.co/auto-subtitle-generator?via=mohamed-7eadb8"},
-  {group:"فيديو وصوت", name:"Vizard",     desc:"الفيديو الطويل يتقطع لريلز جاهزة",     link:"https://vizard.ai/?via=mohamed-almawardy"},
+  {group:"فيديو وصوت", name:"Vizard",     desc:"ريلز من البودكاست واللايف",     link:"https://vizard.ai/?via=mohamed-almawardy"},
   {group:"فيديو وصوت", name:"Fliki",      desc:"السكريبت يتحول لفيديو من غير تصوير",   link:"https://fliki.ai/?via=mohamed-almawardy"},
   {group:"فيديو وصوت", name:"Revid",      desc:"فيديو كامل من مجرد فكرة",  link:"https://www.revid.ai/?via=mfmawardy74"},
   {group:"فيديو وصوت", name:"ElevenLabs", desc:"تعليق صوتي واستنساخ صوتك",            link:"https://try.elevenlabs.io/8sifpm9fgqt8"},
@@ -69,6 +70,8 @@ const TOOLS = [
   {group:"البيزنس والأوتوميشن", name:"Make",       desc:"التطبيقات تشتغل مع بعض من غير كود",     link:"https://www.make.com/en/register?pc=mawardy"},
   {group:"البيزنس والأوتوميشن", name:"Systeme.io", desc:"موقعك وإيميلاتك وكورسك مع بعض",   link:"https://systeme.io/?sa=sa02859287736668fc4f0ca724f25542131edb3afd"},
   {group:"البيزنس والأوتوميشن", name:"Hostinger",  desc:"موقع باسمك من غير كود",                 link:"https://www.hostinger.com?REFERRALCODE=YG3MFMAWAH2L"},
+  {group:"البيزنس والأوتوميشن", name:"Kit",  desc:"قايمة إيميلات بتاعتك بعيد عن الخوارزميات", link:""},
+  {group:"البيزنس والأوتوميشن", name:"Gamma", desc:"عرض تقديمي لعميلك في دقايق", link:""},
 ];
 const root = document.getElementById("tools");
 const live = TOOLS.filter(t => t.link);
