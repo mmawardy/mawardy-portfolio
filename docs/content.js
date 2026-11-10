@@ -147,6 +147,9 @@ window.SITE = {
         { title: { ar: "اكتب كلمة واللينك يوصل لوحده", en: "Auto DMs With ManyChat" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-manychat.mp4`, poster: "assets/posters/mawardy-manychat.jpg" },
         { title: { ar: "موقع باللي في دماغك من غير كود", en: "No Code Sites With Webflow" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-webflow.mp4`, poster: "assets/posters/mawardy-webflow.jpg" },
         { title: { ar: "تصاميم إعلانك في ثواني", en: "AI Ad Design With AdCreative.ai" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-adcreative.mp4`, poster: "assets/posters/mawardy-adcreative.jpg" },
+        { title: { ar: "سينما من غير كاميرا", en: "Cinematic AI Video With Higgsfield" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-higgsfield.mp4`, poster: "assets/posters/mawardy-higgsfield.jpg" },
+        { title: { ar: "ملخص الميتنج جاهز لوحده", en: "AI Meeting Notes With Fireflies" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-fireflies.mp4`, poster: "assets/posters/mawardy-fireflies.jpg" },
+        { title: { ar: "مقالك يطلع أول نتيجة", en: "SEO Articles With Frase" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-frase.mp4`, poster: "assets/posters/mawardy-frase.jpg" },
       ],
     },
     {

@@ -28,5 +28,8 @@
  {"out": "41-gamma-decks.jpg", "num": "41", "topic": "AI Tools / Reel", "l1": "AI Decks", "l2": "With Gamma", "ar": "عرض من جملة واحدة", "imgs": ["gamma_2.jpg", "gamma_1.jpg", "gamma_3.jpg"], "seed": 109},
  {"out": "42-manychat-autodm.jpg", "num": "42", "topic": "Tools / Reel", "l1": "Auto DMs", "l2": "With ManyChat", "ar": "اكتب كلمة واللينك يوصل", "imgs": ["manychat_2.jpg", "manychat_3.jpg", "manychat_1.jpg"], "seed": 113},
  {"out": "43-webflow-sites.jpg", "num": "43", "topic": "Web / Reel", "l1": "No Code Sites", "l2": "With Webflow", "ar": "موقع من غير كود", "imgs": ["webflow_2.jpg", "webflow_3.jpg", "webflow_1.jpg"], "seed": 127},
- {"out": "44-adcreative-ads.jpg", "num": "44", "topic": "AI Tools / Reel", "l1": "AI Ad Design", "l2": "AdCreative.ai", "ar": "تصاميم إعلانك في ثواني", "imgs": ["adcreative_2.jpg", "adcreative_3.jpg", "adcreative_1.jpg"], "seed": 131}
+ {"out": "44-adcreative-ads.jpg", "num": "44", "topic": "AI Tools / Reel", "l1": "AI Ad Design", "l2": "AdCreative.ai", "ar": "تصاميم إعلانك في ثواني", "imgs": ["adcreative_2.jpg", "adcreative_3.jpg", "adcreative_1.jpg"], "seed": 131},
+ {"out": "45-higgsfield-cinematic.jpg", "num": "45", "topic": "AI Video / Reel", "l1": "Cinematic AI Video", "l2": "With Higgsfield", "ar": "سينما من غير كاميرا", "imgs": ["higgsfield_2.jpg", "higgsfield_3.jpg", "higgsfield_1.jpg"], "seed": 137},
+ {"out": "46-fireflies-meetings.jpg", "num": "46", "topic": "AI Tools / Reel", "l1": "AI Meeting Notes", "l2": "With Fireflies", "ar": "ملخص الميتنج جاهز لوحده", "imgs": ["fireflies_2.jpg", "fireflies_3.jpg", "fireflies_1.jpg"], "seed": 139},
+ {"out": "47-frase-seo.jpg", "num": "47", "topic": "SEO / Reel", "l1": "SEO Articles", "l2": "With Frase", "ar": "مقالك يطلع أول نتيجة", "imgs": ["frase_2.jpg", "frase_3.jpg", "frase_1.jpg"], "seed": 149}
 ]
