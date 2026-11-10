@@ -150,6 +150,11 @@ window.SITE = {
         { title: { ar: "سينما من غير كاميرا", en: "Cinematic AI Video With Higgsfield" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-higgsfield.mp4`, poster: "assets/posters/mawardy-higgsfield.jpg" },
         { title: { ar: "ملخص الميتنج جاهز لوحده", en: "AI Meeting Notes With Fireflies" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-fireflies.mp4`, poster: "assets/posters/mawardy-fireflies.jpg" },
         { title: { ar: "مقالك يطلع أول نتيجة", en: "SEO Articles With Frase" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-frase.mp4`, poster: "assets/posters/mawardy-frase.jpg" },
+        { title: { ar: "محتوى جاهز في ثواني", en: "AI Writing With Rytr" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-rytr.mp4`, poster: "assets/posters/mawardy-rytr.jpg" },
+        { title: { ar: "اكشف الكتابة بالذكاء الاصطناعي", en: "AI Content Check With Originality.ai" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-originality.mp4`, poster: "assets/posters/mawardy-originality.jpg" },
+        { title: { ar: "بوستات لينكدإن بالذكاء الاصطناعي", en: "LinkedIn Growth With Taplio" }, topic: "TOOLS", video: `${VIDEO_BASE}mawardy-taplio.mp4`, poster: "assets/posters/mawardy-taplio.jpg" },
+        { title: { ar: "بوت يرد على عملاءك", en: "AI Support Agent With Quickchat" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-quickchat.mp4`, poster: "assets/posters/mawardy-quickchat.jpg" },
+        { title: { ar: "شات بوت من معلوماتك", en: "Your Own Chatbot With CustomGPT.ai" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-customgpt.mp4`, poster: "assets/posters/mawardy-customgpt.jpg" },
       ],
     },
     {
