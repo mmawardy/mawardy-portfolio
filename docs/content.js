@@ -238,6 +238,7 @@ window.SITE = {
       title: { ar: "صناعة المحتوى", en: "Content Creators" },
       desc: { ar: "ريلز تعليمية وقصصية لصناع المحتوى والمتخصصين.", en: "Educational and story-led reels for creators and experts." },
       items: [
+        { title: { ar: "٣ غلطات بتقلب الريل في أول ثانيتين", en: "3 Reel Mistakes Brands Make" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-brandhooks.mp4`, poster: "assets/posters/mawardy-brandhooks.jpg" },
         { title: { ar: "ليه النت محدود في مصر؟", en: "Why Is Internet Limited In Egypt?" }, topic: "STORY", video: `${VIDEO_BASE}v60.mp4`, poster: "assets/posters/v60.jpg" },
         { title: { ar: "حقيقة التستوستيرون", en: "The Testosterone Truth" }, topic: "EXPLAINER", video: `${VIDEO_BASE}v25.mp4`, poster: "assets/posters/v25.jpg" },
         { title: { ar: "فن التحدث أمام الجمهور", en: "Public Speaking Mastery" }, topic: "EDUCATION", video: `${VIDEO_BASE}v44.mp4`, poster: "assets/posters/v44.jpg" },

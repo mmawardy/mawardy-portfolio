@@ -49,5 +49,6 @@
  {"out":  "62-anifusion-manga.jpg", "num":  "62", "topic":  "AI Art / Reel", "l1":  "AI Manga Maker", "l2":  "With Anifusion", "ar":  "مانجا من غير رسم", "imgs":  ["anifusion_2.jpg", "anifusion_3.jpg", "anifusion_1.jpg"], "seed":  233},
  {"out":  "63-storywriter-dark-fiction.jpg", "num":  "63", "topic":  "AI Writing / Reel", "l1":  "Dark Fiction", "l2":  "With aiWriter", "ar":  "قصص رعب من غير فلتر", "imgs":  ["storywriter_2.jpg", "storywriter_3.jpg", "storywriter_1.jpg"], "seed":  239},
  {"out":  "64-sendshort-clips.jpg", "num":  "64", "topic":  "AI Video / Reel", "l1":  "Long Video To Reels", "l2":  "With SendShort", "ar":  "ريلز بمونتاج لوحده", "imgs":  ["sendshort_2.jpg", "sendshort_3.jpg", "sendshort_1.jpg"], "seed":  241},
- {"out":  "65-novita-ai-api.jpg", "num":  "65", "topic":  "Developers / Reel", "l1":  "200+ AI Models", "l2":  "With Novita AI", "ar":  "موديلات AI في API واحد", "imgs":  ["novita_2.jpg", "novita_3.jpg", "novita_1.jpg"], "seed":  251}
+ {"out":  "65-novita-ai-api.jpg", "num":  "65", "topic":  "Developers / Reel", "l1":  "200+ AI Models", "l2":  "With Novita AI", "ar":  "موديلات AI في API واحد", "imgs":  ["novita_2.jpg", "novita_3.jpg", "novita_1.jpg"], "seed":  251},
+ {"out":  "66-brandhooks-reel-mistakes.jpg", "num":  "66", "topic":  "Brands / Reel", "l1":  "3 Reel Mistakes", "l2":  "Brands Make", "ar":  "ريلز بتتقلب في ثانيتين", "imgs":  ["brandhooks_2.jpg", "brandhooks_3.jpg", "brandhooks_1.jpg"], "seed":  257}
 ]
