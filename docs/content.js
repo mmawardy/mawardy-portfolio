@@ -165,6 +165,9 @@ window.SITE = {
         { title: { ar: "شورتس من غير تصوير", en: "Daily Shorts With Short AI" }, topic: "AI VIDEO", video: `${VIDEO_BASE}mawardy-shortai.mp4`, poster: "assets/posters/mawardy-shortai.jpg" },
         { title: { ar: "مراجع بحثك حقيقية", en: "Real Citations With Koke AI" }, topic: "AI TOOLS", video: `${VIDEO_BASE}mawardy-koke.mp4`, poster: "assets/posters/mawardy-koke.jpg" },
         { title: { ar: "مانجا من غير رسم", en: "AI Manga Maker With Anifusion" }, topic: "AI ART", video: `${VIDEO_BASE}mawardy-anifusion.mp4`, poster: "assets/posters/mawardy-anifusion.jpg" },
+        { title: { ar: "قصص رعب من غير فلتر", en: "Dark Fiction With aiWriter" }, topic: "AI WRITING", video: `${VIDEO_BASE}mawardy-storywriter.mp4`, poster: "assets/posters/mawardy-storywriter.jpg" },
+        { title: { ar: "ريلز بمونتاج لوحده", en: "Long Video To Reels With SendShort" }, topic: "AI VIDEO", video: `${VIDEO_BASE}mawardy-sendshort.mp4`, poster: "assets/posters/mawardy-sendshort.jpg" },
+        { title: { ar: "موديلات AI في API واحد", en: "200+ AI Models With Novita AI" }, topic: "DEVELOPERS", video: `${VIDEO_BASE}mawardy-novita.mp4`, poster: "assets/posters/mawardy-novita.jpg" },
       ],
     },
     {
