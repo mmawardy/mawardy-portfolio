@@ -186,6 +186,11 @@ window.SITE = {
       title: { ar: "الرياضة واللياقة", en: "Sports & Fitness" },
       desc: { ar: "ريلز لصالات الجيم والرياضات القتالية والبطولات.", en: "Reels for gyms, combat sports and championships." },
       items: [
+        { title: { ar: "فيديو التحوّل للجيمات", en: "Transformation Videos For Gyms" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-g-transform.mp4`, poster: "assets/posters/mawardy-g-transform.jpg" },
+        { title: { ar: "جولة في الجيم تجيب مشتركين", en: "A Gym Tour That Brings Members" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-g-tour.mp4`, poster: "assets/posters/mawardy-g-tour.jpg" },
+        { title: { ar: "فيديوهات بتبيع الكوتشينج أونلاين", en: "Videos That Sell Online Coaching" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-g-coach.mp4`, poster: "assets/posters/mawardy-g-coach.jpg" },
+        { title: { ar: "فيديو تمرين الناس بتحفظه", en: "Exercise Videos People Save" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-g-exercise.mp4`, poster: "assets/posters/mawardy-g-exercise.jpg" },
+        { title: { ar: "فيديو عرض الاشتراك", en: "A Membership Offer Video" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-g-offer.mp4`, poster: "assets/posters/mawardy-g-offer.jpg" },
         { title: { ar: "ملاكمة الوزن الثقيل", en: "Heavyweight Boxing" }, topic: "MMA", video: `${VIDEO_BASE}v40.mp4`, poster: "assets/posters/v40.jpg" },
         { title: { ar: "عقلية المقاتل", en: "The Fighter's Mindset" }, topic: "MMA", video: `${VIDEO_BASE}v53.mp4`, poster: "assets/posters/v53.jpg" },
         { title: { ar: "أساسيات الضربات القتالية", en: "Striking Fundamentals" }, topic: "TRAINING", video: `${VIDEO_BASE}v41.mp4`, poster: "assets/posters/v41.jpg" },
@@ -203,6 +208,11 @@ window.SITE = {
       title: { ar: "العقارات", en: "Real Estate" },
       desc: { ar: "محتوى للمطورين والوكلاء والمشاريع السكنية.", en: "Content for developers, brokers and residential projects." },
       items: [
+        { title: { ar: "فيديو جولة يبيع الشقة", en: "Apartment Video Tours That Sell" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-e-tour.mp4`, poster: "assets/posters/mawardy-e-tour.jpg" },
+        { title: { ar: "٣ فيديوهات بتبيع أي مشروع", en: "3 Videos That Sell Any Project" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-e-project.mp4`, poster: "assets/posters/mawardy-e-project.jpg" },
+        { title: { ar: "ابني اسمك كسمسار", en: "Build Your Name As A Broker" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-e-agent.mp4`, poster: "assets/posters/mawardy-e-agent.jpg" },
+        { title: { ar: "٣ غلطات في فيديوهات العقارات", en: "3 Mistakes In Property Videos" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-e-mistakes.mp4`, poster: "assets/posters/mawardy-e-mistakes.jpg" },
+        { title: { ar: "من مشاهدة لمعاينة", en: "From Views To Property Viewings" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-e-lead.mp4`, poster: "assets/posters/mawardy-e-lead.jpg" },
         { title: { ar: "الحي اللاتيني، العلمين الجديدة", en: "The Latin District, New Alamein" }, topic: "PROJECT", video: `${VIDEO_BASE}v58.mp4`, poster: "assets/posters/v58.jpg" },
         { title: { ar: "مشروع بالم هيلز الجديد", en: "Palm Hills New Launch" }, topic: "PROJECT", video: `${VIDEO_BASE}v28.mp4`, poster: "assets/posters/v28.jpg" },
         { title: { ar: "جميلة سيلفر ساند", en: "Jamila Silver Sands" }, topic: "PROJECT", video: `${VIDEO_BASE}v52.mp4`, poster: "assets/posters/v52.jpg" },
@@ -212,6 +222,17 @@ window.SITE = {
         { title: { ar: "شراء العقار الذكي", en: "Smart Property Buying" }, topic: "GUIDE", video: `${VIDEO_BASE}v33.mp4`, poster: "assets/posters/v33.jpg" },
         { title: { ar: "حكاية سوق العقار", en: "The Property Market Story" }, topic: "STORY", video: `${VIDEO_BASE}v34.mp4`, poster: "assets/posters/v34.jpg" },
         { title: { ar: "حقيقة شركات العقارات", en: "The Truth About Developers" }, topic: "STORY", video: `${VIDEO_BASE}v59.mp4`, poster: "assets/posters/v59.jpg" },
+      ],
+    },
+    {
+      title: { ar: "التجميل والعناية", en: "Beauty & Care" },
+      desc: { ar: "ريلز لعيادات التجميل والأسنان وصالونات البيوتي.", en: "Reels for cosmetic and dental clinics and beauty salons." },
+      items: [
+        { title: { ar: "نتايج البشرة اللي بتجيب حجوزات", en: "Skin Results That Bring Bookings" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-c-skin.mp4`, poster: "assets/posters/mawardy-c-skin.jpg" },
+        { title: { ar: "فيديوهات لعيادات الأسنان", en: "Videos For Dental Clinics" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-c-dental.mp4`, poster: "assets/posters/mawardy-c-dental.jpg" },
+        { title: { ar: "٣ فيديوهات بتملا مواعيد الصالون", en: "3 Videos That Fill A Salon" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-c-salon.mp4`, poster: "assets/posters/mawardy-c-salon.jpg" },
+        { title: { ar: "فيديوهات الثقة لعيادات التجميل", en: "Trust Videos For Cosmetic Clinics" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-c-cosmetic.mp4`, poster: "assets/posters/mawardy-c-cosmetic.jpg" },
+        { title: { ar: "من ريل لحجز بيوتي", en: "From Reels To Beauty Bookings" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-c-booking.mp4`, poster: "assets/posters/mawardy-c-booking.jpg" },
       ],
     },
     {
