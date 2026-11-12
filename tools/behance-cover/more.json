@@ -51,5 +51,6 @@
  {"out":  "64-sendshort-clips.jpg", "num":  "64", "topic":  "AI Video / Reel", "l1":  "Long Video To Reels", "l2":  "With SendShort", "ar":  "ريلز بمونتاج لوحده", "imgs":  ["sendshort_2.jpg", "sendshort_3.jpg", "sendshort_1.jpg"], "seed":  241},
  {"out":  "65-novita-ai-api.jpg", "num":  "65", "topic":  "Developers / Reel", "l1":  "200+ AI Models", "l2":  "With Novita AI", "ar":  "موديلات AI في API واحد", "imgs":  ["novita_2.jpg", "novita_3.jpg", "novita_1.jpg"], "seed":  251},
  {"out":  "66-brandhooks-reel-mistakes.jpg", "num":  "66", "topic":  "Brands / Reel", "l1":  "3 Reel Mistakes", "l2":  "Brands Make", "ar":  "ريلز بتتقلب في ثانيتين", "imgs":  ["brandhooks_2.jpg", "brandhooks_3.jpg", "brandhooks_1.jpg"], "seed":  257},
- {"out":  "67-hookexamples-reel-hooks.jpg", "num":  "67", "topic":  "Brands / Reel", "l1":  "One Line That", "l2":  "Stops The Scroll", "ar":  "٣ أمثلة لهوك يشد", "imgs":  ["hookexamples_2.jpg", "hookexamples_3.jpg", "hookexamples_1.jpg"], "seed":  263}
+ {"out":  "67-hookexamples-reel-hooks.jpg", "num":  "67", "topic":  "Brands / Reel", "l1":  "One Line That", "l2":  "Stops The Scroll", "ar":  "٣ أمثلة لهوك يشد", "imgs":  ["hookexamples_2.jpg", "hookexamples_3.jpg", "hookexamples_1.jpg"], "seed":  263},
+ {"out":  "68-reelanatomy-selling-reel.jpg", "num":  "68", "topic":  "Brands / Reel", "l1":  "Anatomy Of A", "l2":  "Reel That Sells", "ar":  "ريل بيبيع في ٥ خطوات", "imgs":  ["reelanatomy_2.jpg", "reelanatomy_3.jpg", "reelanatomy_1.jpg"], "seed":  269}
 ]
