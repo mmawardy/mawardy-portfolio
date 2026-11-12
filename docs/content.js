@@ -238,6 +238,9 @@ window.SITE = {
       title: { ar: "صناعة المحتوى", en: "Content Creators" },
       desc: { ar: "ريلز تعليمية وقصصية لصناع المحتوى والمتخصصين.", en: "Educational and story-led reels for creators and experts." },
       items: [
+        { title: { ar: "ليه براندك شكله رخيص؟", en: "Why Brand Videos Look Cheap" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-premiumlook.mp4`, poster: "assets/posters/mawardy-premiumlook.jpg" },
+        { title: { ar: "جدول محتوى أسبوعي لأي براند", en: "A Weekly Content Plan For Any Brand" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-contentweek.mp4`, poster: "assets/posters/mawardy-contentweek.jpg" },
+        { title: { ar: "نفس الفيديو قبل وبعد المونتاج", en: "Same Video, Before & After Edit" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-beforeafter.mp4`, poster: "assets/posters/mawardy-beforeafter.jpg" },
         { title: { ar: "ريل بيبيع في ٥ خطوات", en: "Anatomy Of A Reel That Sells" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-reelanatomy.mp4`, poster: "assets/posters/mawardy-reelanatomy.jpg" },
         { title: { ar: "جملة واحدة بتفرق: ٣ أمثلة لهوك", en: "One Line That Stops The Scroll" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-hookexamples.mp4`, poster: "assets/posters/mawardy-hookexamples.jpg" },
         { title: { ar: "٣ غلطات بتقلب الريل في أول ثانيتين", en: "3 Reel Mistakes Brands Make" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-brandhooks.mp4`, poster: "assets/posters/mawardy-brandhooks.jpg" },
