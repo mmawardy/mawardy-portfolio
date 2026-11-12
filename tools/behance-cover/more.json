@@ -56,5 +56,6 @@
  {"out":  "69-beforeafter-editing.jpg", "num":  "69", "topic":  "Brands / Reel", "l1":  "Same Video,", "l2":  "Before & After Edit", "ar":  "نفس الفيديو قبل وبعد المونتاج", "imgs":  ["beforeafter_2.jpg", "beforeafter_3.jpg", "beforeafter_1.jpg"], "seed":  271},
  {"out":  "70-contentweek-content-plan.jpg", "num":  "70", "topic":  "Brands / Reel", "l1":  "A Weekly Content", "l2":  "Plan For Any Brand", "ar":  "جدول محتوى أسبوعي لأي براند", "imgs":  ["contentweek_2.jpg", "contentweek_3.jpg", "contentweek_1.jpg"], "seed":  277},
  {"out":  "71-premiumlook-brand-video.jpg", "num":  "71", "topic":  "Brands / Reel", "l1":  "Why Brand Videos", "l2":  "Look Cheap", "ar":  "ليه براندك شكله رخيص؟", "imgs":  ["premiumlook_2.jpg", "premiumlook_3.jpg", "premiumlook_1.jpg"], "seed":  281},
- {"out":  "72-retention-watch-graph.jpg", "num":  "72", "topic":  "Brands / Reel", "l1":  "Why Viewers Leave", "l2":  "At Second Three", "ar":  "بيقفلوا فيديوك في تالت ثانية؟", "imgs":  ["retention_2.jpg", "retention_3.jpg", "retention_1.jpg"], "seed":  283}
+ {"out":  "72-retention-watch-graph.jpg", "num":  "72", "topic":  "Brands / Reel", "l1":  "Why Viewers Leave", "l2":  "At Second Three", "ar":  "بيقفلوا فيديوك في تالت ثانية؟", "imgs":  ["retention_2.jpg", "retention_3.jpg", "retention_1.jpg"], "seed":  283},
+ {"out":  "73-phoneshoot-filming-tips.jpg", "num":  "73", "topic":  "Brands / Reel", "l1":  "Film Your Product", "l2":  "With Your Phone", "ar":  "صوّر منتجك بالموبايل صح", "imgs":  ["phoneshoot_2.jpg", "phoneshoot_3.jpg", "phoneshoot_1.jpg"], "seed":  287}
 ]

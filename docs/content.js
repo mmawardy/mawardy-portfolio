@@ -238,6 +238,7 @@ window.SITE = {
       title: { ar: "صناعة المحتوى", en: "Content Creators" },
       desc: { ar: "ريلز تعليمية وقصصية لصناع المحتوى والمتخصصين.", en: "Educational and story-led reels for creators and experts." },
       items: [
+        { title: { ar: "صوّر منتجك بالموبايل صح", en: "Film Your Product With Your Phone" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-phoneshoot.mp4`, poster: "assets/posters/mawardy-phoneshoot.jpg" },
         { title: { ar: "بيقفلوا فيديوك في تالت ثانية؟", en: "Why Viewers Leave At Second Three" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-retention.mp4`, poster: "assets/posters/mawardy-retention.jpg" },
         { title: { ar: "ليه براندك شكله رخيص؟", en: "Why Brand Videos Look Cheap" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-premiumlook.mp4`, poster: "assets/posters/mawardy-premiumlook.jpg" },
         { title: { ar: "جدول محتوى أسبوعي لأي براند", en: "A Weekly Content Plan For Any Brand" }, topic: "TIPS", video: `${VIDEO_BASE}mawardy-contentweek.mp4`, poster: "assets/posters/mawardy-contentweek.jpg" },
