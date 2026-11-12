@@ -55,5 +55,6 @@
  {"out":  "68-reelanatomy-selling-reel.jpg", "num":  "68", "topic":  "Brands / Reel", "l1":  "Anatomy Of A", "l2":  "Reel That Sells", "ar":  "ريل بيبيع في ٥ خطوات", "imgs":  ["reelanatomy_2.jpg", "reelanatomy_3.jpg", "reelanatomy_1.jpg"], "seed":  269},
  {"out":  "69-beforeafter-editing.jpg", "num":  "69", "topic":  "Brands / Reel", "l1":  "Same Video,", "l2":  "Before & After Edit", "ar":  "نفس الفيديو قبل وبعد المونتاج", "imgs":  ["beforeafter_2.jpg", "beforeafter_3.jpg", "beforeafter_1.jpg"], "seed":  271},
  {"out":  "70-contentweek-content-plan.jpg", "num":  "70", "topic":  "Brands / Reel", "l1":  "A Weekly Content", "l2":  "Plan For Any Brand", "ar":  "جدول محتوى أسبوعي لأي براند", "imgs":  ["contentweek_2.jpg", "contentweek_3.jpg", "contentweek_1.jpg"], "seed":  277},
- {"out":  "71-premiumlook-brand-video.jpg", "num":  "71", "topic":  "Brands / Reel", "l1":  "Why Brand Videos", "l2":  "Look Cheap", "ar":  "ليه براندك شكله رخيص؟", "imgs":  ["premiumlook_2.jpg", "premiumlook_3.jpg", "premiumlook_1.jpg"], "seed":  281}
+ {"out":  "71-premiumlook-brand-video.jpg", "num":  "71", "topic":  "Brands / Reel", "l1":  "Why Brand Videos", "l2":  "Look Cheap", "ar":  "ليه براندك شكله رخيص؟", "imgs":  ["premiumlook_2.jpg", "premiumlook_3.jpg", "premiumlook_1.jpg"], "seed":  281},
+ {"out":  "72-retention-watch-graph.jpg", "num":  "72", "topic":  "Brands / Reel", "l1":  "Why Viewers Leave", "l2":  "At Second Three", "ar":  "بيقفلوا فيديوك في تالت ثانية؟", "imgs":  ["retention_2.jpg", "retention_3.jpg", "retention_1.jpg"], "seed":  283}
 ]
