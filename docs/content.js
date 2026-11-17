@@ -114,6 +114,15 @@ window.SITE = {
   // `poster` is the still shown in the thumbnail until the video plays.
   videoGroups: [
     {
+      title: { ar: "عوادة سنتر", en: "Awada Center" },
+      desc: { ar: "٣ ريلز لحملة بلاك نوفمبر لمعرض عوادة سنتر للأجهزة الكهربائية: مونتاج من غير سكتات، موشن جرافيكس بألوان البراند، وأنيميشن للمنتجات والأسعار.", en: "Three Black November reels for Awada Center electrical appliances: tight cuts, brand-colored motion graphics and animated products and prices." },
+      items: [
+        { title: { ar: "بلاك نوفمبر جاي", en: "Black November Is Coming" }, topic: "RETAIL", video: `${VIDEO_BASE}awada-black-november.mp4`, poster: "assets/posters/awada-black-november.jpg" },
+        { title: { ar: "جولة الأسعار", en: "Price Drop Walkthrough" }, topic: "RETAIL", video: `${VIDEO_BASE}awada-prices.mp4`, poster: "assets/posters/awada-prices.jpg" },
+        { title: { ar: "أكتر من ٢٠٠ هدية", en: "200+ Gifts" }, topic: "RETAIL", video: `${VIDEO_BASE}awada-gifts.mp4`, poster: "assets/posters/awada-gifts.jpg" },
+      ],
+    },
+    {
       title: { ar: "حملة مواردي", en: "Mawardy Campaign" },
       desc: { ar: "المنصة التي تجمع العقارات والسيارات والذهب في مكان واحد.", en: "The platform that brings properties, cars and gold into one place." },
       items: [
